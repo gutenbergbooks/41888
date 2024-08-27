@@ -1,0 +1,6290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <title>
+      The Project Gutenberg eBook of De Mortuis Nil Nisi Bona by Spicer &amp; Pegler.
+    </title>
+    <style type="text/css">
+/*<![CDATA[  XML blockout */
+<!--
+/* ************************************************************************
+ * Different browsers have different defaults when loading a new page. The
+ * following CSS Reset makes all browsers start out with the same properties.
+ * See meyerweb.com/eric/tools/css/reset/ License: none (public domain)
+ * ********************************************************************** */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p,
+blockquote, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small, strong, var, u,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup,  menu, nav, output,
+ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu,
+nav, section {	display: block;  }/* HTML5 display-role for older browsers */
+body {	line-height: 1; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after {
+	content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+/* End of CSS Reset */
+/* ************************************************************************
+ * set the body margins to allow whitespace along sides of window - use
+ * width rather than margin-right to get IE5 to behave itself.
+ * ********************************************************************** */
+body { margin-left:4%; width:90%; /* == margin-right:6% */ }
+/* ************************************************************************
+ * set the indention, spacing, and leading for ALL paragraphs
+ * ********************************************************************** */
+p {
+	margin-top: 1em;	/* inter-paragraph space */
+	margin-bottom: 0;	/* use only top-margin for spacing */
+	line-height: 1.4em;	/* generous interline spacing ("leading") */
+}
+/* ************************************************************************
+ * Style paragraphs of open text, not e.g. quotes or table cells
+ * ********************************************************************** */
+body > p {
+	text-align: justify; /* or left?? */
+	text-indent: 2em;	/* first-line indent, could be 0em */
+}
+/* suppress indentation on paragraphs following heads and in tables */
+h2+p, td, td > p { text-indent: 0; }
+/* ************************************************************************
+ * Small-cap font class, for use in spans.
+ * ********************************************************************** */
+.smcap {font-variant: small-caps;}
+/* ************************************************************************
+ * right-alignment of special text, span or para.
+ * ********************************************************************** */
+.ralign { text-align: right; }
+/* ************************************************************************
+ * Mark corrected typo with:
+ *  <ins class="correction" title="Original: typu">typo</ins>
+ * ********************************************************************** */
+ins.correction {
+	text-decoration:none; /* replace default underline.. */
+	border-bottom: thin dotted gray; /* ..with delicate gray line */
+}
+/* ************************************************************************
+ * Head 2 is for chapter heads.
+ * ********************************************************************** */
+h2 {
+	margin-top:3em;			/* extra space above.. */
+	margin-bottom: 2em;		/* ..and below */
+	clear: both;			/* don't let sidebars overlap */
+	font-size: 133%;		/* larger font than body */
+	/* font-weight: bold;      match book */
+	/* letter-spacing: 3px;    older books often have loose headers */
+	text-align:center;	 /*   left-aligned by default. */
+}
+/* ************************************************************************
+ * Styling the default HR and some special-purpose ones.
+ * Default rule centered and clear of floats; sized for thought-breaks
+ * <hr class="major" /> for e.g. chapters
+ * <hr class="minor" /> for e.g. epigraphs
+ * <hr class="double" /> cute double rule
+ * ********************************************************************** */
+hr {
+	width:45%;			/* good width for a <tb> */
+	margin-top: 1em;	/* space above & below */
+	margin-bottom: 1em;
+	margin-left: auto;  /* these two ensure a.. */
+	margin-right: auto; /* ..centered rule */
+	clear: both;		/* don't let sidebars & floats overlap rule */
+}
+hr.major { width:65%; margin-top:2em; margin-bottom: 2em;}
+/* ************************************************************************
+ * Images and captions
+ * ********************************************************************** */
+img { /* style the default inline image here, e.g. */
+	/* border: 1px solid black; a thin black line border.. */
+	/* padding: 6px; ..spaced a bit out from the graphic */
+}
+p.caption {
+	margin-top: 0; /* snuggled up to its image */
+	font-size: smaller;
+	/* font-style: italic; 		match style to orginal */
+	/* font-variant: small-caps; ditto */
+}
+/* ************************************************************************
+ * Put <div class="center">...</div> around an image or a table to center
+ * it on the page. Put it around a <div class="poem"> to center-align the
+ * poem's lines.
+ * ********************************************************************** */
+.center { text-align: center; text-indent:0; }
+.center table { margin-left: auto; margin-right: auto;  text-align: left; }
+.center img { margin-left: auto; margin-right: auto; }
+div.center { margin:1em auto; } /* a little space above & below all images etc */
+/* ************************************************************************
+ * Style the blockquote tag and related elements:
+ *  - inset left and right
+ *	- one-point smaller font (questionable?)
+ * ********************************************************************** */
+.blockquote, .blkquot {
+	margin-left: 10%;
+	margin-right: 5%;
+}
+/* ************************************************************************
+ * Generic floating images or sidebars: div or img class='floatr'
+ * ********************************************************************** */
+.floatl { /* just like floatr but opposite */
+	float: left;
+	clear: left;
+	/*text-align: center;		optional: img & caption centered in box */
+	/*border: 1px solid black;	optional thin border */
+	/*padding: 3px;  keep text in the div away from border */
+	margin: 0 4px 0 0; /* right margin to set box clear from body */
+	}
+/* ************************************************************************
+ * Styling tables and their contents:
+ *   automatic center/bold for header and footer cells.
+ *   use class="shade" to put gray bg in a <tr> or a <td>.
+ * ********************************************************************** */
+table { /* these affect all <table> elements */
+	margin-top: 1em;	/* space above the table */
+	caption-side:		/* top; or */ bottom ;
+	empty-cells: show;	/* no need for nbsp's in empty cells */
+	border-collapse: collapse;
+}
+td, td > p { /* style all text inside body cells */
+	padding: 0.5em 0.5em;
+	line-height: 1.5em;
+	font-size: 90%;
+	text-align: left;
+}
+.border td { border: 1px solid black; } /* table with cell borders */
+
+thead td, tfoot td {	/* header/footer cells: center & bold */
+	text-align: center;
+	font-weight: bold;
+	/* background-color: #ddd;  optional: gray background */
+}
+td.c { text-align:center; } /* align text in table cells */
+td.r { text-align:right; }  /* generated by PPQT table->html */
+ /* to make a center rule in table of accounts: border right edge of td */
+td.rb { text-align:right; border-right:1px solid black; }
+span.numer { font-size:66%; vertical-align:20%; margin-left:2px; }
+span.denom { font-size:66%; vertical-align:-5%; }
+/* ************************************************************************
+ * Styling poetry, Guiguts-compatible class names
+ * <div class="poem"> around entire poem (title outside as <h2/3>
+ * <div class="stanza"> around each stanza even if only one
+ * <span class="i?">..</span><br /> around each line
+ * the span class i? is "i0" for unindented lines, else 1/2 the count of
+ * spaces preceding the indented line.
+ * You can also use <p class="right">, <p class="signature">, and
+ *   <p class="citation"> within a poem.
+ * ********************************************************************** */
+div.poem { /* Style the entire poem */
+	text-align:left;	/* make sure no justification attempted */
+	margin-left:10%;		/* inset a bit from the left */
+	width:90%;		/* inset from the right, & fix IE6 abs.pos. bug */
+	position: relative;	/* div is a container for .linenum positions */
+	line-height: 2em;
+}
+.poem .stanza {		/* set vertical space between stanzas */
+	margin-top: 1em;
+}
+.stanza span,	/* each line as generated by Guiguts.. */
+.stanza div,	/* ..or, a line marked as a div.. */
+.stanza p	/* ..or, a line marked as a p */
+{
+	display:block;		/* make sure span acts like div or p */
+	line-height: 1.2em;	/* set spacing between lines in stanza */
+	margin-left: 4em;	/* set the indent for the continuation..*/
+	text-indent: -4em;	/* ..of folded lines */
+	margin-top: 0;		/* stanza provides vertical break */
+}
+.stanza br { /* br's generated by Guiguts to be ignored by CSS browsers */
+	display: none; /* Lynx doesn't recognize this, so it executes br */
+}
+.stanza .i01 {margin-left: 5em;}	/* PPQT generates class='inn'  */
+.stanza .i02 {margin-left: 6em;}	/* where nn is the ascii indent */
+.stanza .i03 {margin-left: 7em;}	/* divided by 2, adding 1em to */
+.stanza .i04 {margin-left: 8em;}	/* the default indent for each */
+div#cover, div#titlepage {
+	border: 1px double black;
+	padding-top: 1em;
+}
+#cover h3 {
+	font-size:400%;
+	font-weight: bold;
+	letter-spacing: 4px;
+	text-align:center;
+	margin: 1em 0 1em 0;
+}
+#cover h4 {
+	font-size: 250%;
+	font-weight: bold;
+	letter-spacing: 3px;
+	text-align:center;
+	margin: 1em 0 1em 0;
+}
+#titlepage {
+	text-align:center;
+	border: 1px solid black;
+	margin:2em 0 2em;
+	padding-bottom:1em;
+	line-height:2em;
+}
+#titlepage h1{ font-size:200%; }
+#titlepage h4 {
+	font-size: 150%;
+	text-align:center;
+	margin: 1em 0 1em 0;
+}
+
+-->
+/* XML end  ]]>*/
+    </style>
+  </head>
+<body>
+
+<div id='cover'>
+
+<div class='center'>
+  <img src='images/titlepage.jpg' id="coverpage"
+    title='Title Page with decoration ...' alt='Title Page with decoration ...'
+  />
+</div>
+
+<h3>
+DE
+MORTUIS<br />
+NIL NISI<br />
+BONA:
+</h3>
+
+<h4>
+<span style='font-size:50%;font-weight:normal;'>BY</span><br />
+SPICER &amp; PEGLER
+</h4>
+
+<h4>
+<span style='font-size:50%;font-weight:normal;'>ILLUSTRATED BY</span><br />
+E. T. REED
+</h4>
+
+</div>
+
+
+<table id='other_works' style='border:1px solid black;'>
+<tr>
+<td style='font-size:125%;font-style:italic;text-align:center;'>BY THE SAME AUTHORS</td>
+</tr>
+<tr>
+<td>
+<p style='margin-left:2em;text-indent:-2em;border:none;'>
+<b>By SPICER and PEGLER.</b><br />
+
+  BOOK-KEEPING AND ACCOUNTS. (Third Edition.)<br />
+  PRACTICAL AUDITING. (Second Edition.)<br />
+  AUDIT PROGRAMMES. (Third Edition.)<br />
+  PRACTICAL BOOK-KEEPING AND COMMERCIAL KNOWLEDGE.<br />
+  INCOME TAX IN RELATION TO ACCOUNTS. (Third Edition.)<br />
+  EXAMINATION NOTE BOOK FOR ACCOUNTANT STUDENTS. (Second Edition)<br />
+  UNDERWRITERS' ACCOUNTS. (Second Edition.)<br />
+  TABLE A: A COMPARATIVE ANALYSIS. (Second Edition.)<br />
+  INCOME TAX PROBLEMS.<br />
+  KEY TO INCOME TAX PROBLEMS.<br />
+  THE MOTOR ACCOUNT BOOK AND REGISTER.
+</p>
+</td></tr>
+<tr><td>
+<p style='margin-left:2em;text-indent:-2em;border:none;'>
+<b>By ERNEST EVAN SPICER, F.C.A.</b><br />
+
+  AN OUTLINE OF THE MONEY MARKET.<br />
+  THE ACCOUNTS OF AN EXECUTOR. (Third Edition.)<br />
+  INTERNAL CHECK IN RELATION TO A MANUFACTURERS'
+     BUSINESS. (Second Edition.)<br />
+  RESERVES, ANNUITIES AND SINKING FUNDS. (Second Edition.)<br />
+  INCOME TAX CLAIMS AND APPEALS. (Second Edition.)<br />
+  A SUMMARY OF THE INCOME TAX PROVISIONS OF THE FINANCE (1909-10)
+     ACT, 1910. (Second Edition.)<br />
+  INCOME AND SUPER-TAX, AND ITS LEGAL EVASION.<br />
+  DISSOLUTION, AMALGAMATION AND RECONSTRUCTION ACCOUNTS.<br />
+  DIVISIBLE PROFITS AND DIVIDENDS.<br />
+  THE EXPORTATION OF BRITISH CAPITAL.<br />
+  THE DEPRECIATION OF GILT-EDGED SECURITIES.
+</p>
+</td></tr>
+<tr><td>
+<p style='margin-left:2em;text-indent:-2em;border:none;'>
+<b>By ERNEST C. PEGLER, F.C.A.</b><br />
+
+  SOME NOTABLE FRAUDS IN ACCOUNTS. (Second Edition.)<br />
+  AN AUDIT OF TRUST ACCOUNTS.<br />
+  STOCK EXCHANGE TRANSACTIONS.<br />
+  THE PRINCIPLES OF AUDITING.<br />
+  COMPARATIVE AND INTERIM ACCOUNTS.
+</p>
+</td></tr>
+<tr><td>
+<p style='margin-left:2em;text-indent:-2em;border:none;'>
+<b>By RANKING, SPICER and PEGLER.</b><br />
+
+  EXECUTORSHIP LAW AND ACCOUNTS. (Third Edition.)<br />
+  PARTNERSHIP LAW.<br />
+  ARBITRATION AND AWARDS.<br />
+  MERCANTILE LAW.<br />
+  BANKRUPTCY AND DEEDS OF ARRANGEMENT ACT. 1913.<br />
+</p>
+</td></tr>
+<tr><td>
+<p style='margin-left:2em;text-indent:-2em;border:none;'>
+<b>By RANKING and SPICER.</b><br />
+
+A PRIMER OF COMPANY LAW
+</p>
+</td></tr>
+</table>
+
+<div id='titlepage'>
+
+<h1 id='book_title'>DE MORTUIS NIL NISI BONA<br />
+<span style='font-size:50%;'>
+BEING A SERIES OF PROBLEMS IN EXECUTORSHIP<br />
+LAW AND ACCOUNTS
+</span></h1>
+
+<h4 id='book_author'>
+<span style='font-size:50%;'>BY</span><br />
+SPICER &amp; PEGLER<br />
+<span style='font-size:75%;font-variant:small-caps;'>
+chartered accountants<br />
+
+60, Watling Street, London, E.C.</span>
+</h4>
+
+<h4 id='foreword_author'>
+<span style='font-size:75%;font-variant:small-caps;'>
+with a foreword in the latin tongue by</span><br />
+
+D. F. de l'HOSTE RANKING, M.A., LL.D.
+</h4>
+
+<h4 id='illustrator'>
+<span style='font-size:75%;font-variant:small-caps;'>
+ILLUSTRATED BY</span><br />
+
+E. T. REED
+</h4>
+
+<p style='margin:0 auto;width:10em;border-top: 1px solid black; border-bottom:1px solid black;'>
+<i>Price 5/- net.</i>
+</p>
+
+<h4 id='publisher'>
+<span style='font-size:75%;font-style:italic;'>
+London:</span><br />
+
+H. FOULKS LYNCH &amp; CO.<br />
+<span style='font-size:75%;font-variant:small-caps;'>
+9, <span class='smcap'>Fenchurch Street</span>, E.C.</span><br />
+1914
+</h4>
+<hr />
+<p style='font-style:italic;'>
+To<br />
+All Spinster Aunts and<br />
+Bachelor Uncles<br />
+who do their duty by<br />
+their Nephews and Nieces<br />
+in<br />
+Matters Testamentary<br />
+This Book is affectionately dedicated.
+</p>
+</div>
+
+<div style='background-color:#DDD;padding-top:1px;padding-bottom:1em;'>
+<h2 id='TRANSCRIBERS_NOTE'>TRANSCRIBER'S NOTE</h2>
+<p>Three minor typographical errors were found and corrected,
+none affecting the sense of the text.
+The Foreword is in Latin. For the convenience of the reader it
+is repeated <a href='#FOREWORD_TRANSLATION'>at the end of the file</a>
+with an informal English translation added. A scanned image of
+a portion of the book's attractive cover is also preserved at the end
+of the document.
+</p>
+<p>The drawings by E. T. Reed are linked to copies of
+higher resolution suitable for printing at 150ppi.</p>
+</div>
+
+<h2 id='PREFACE'>
+PREFACE.
+</h2>
+
+
+<div class='floatl'>
+<img src='images/dropcap-n.png' alt='N' title='drop cap N' />
+</div>
+<p style='text-indent:0;'>
+No one can say that our
+Motives are unworthy, for
+our object is to instruct.
+But there are some who
+may object to our Methods,
+and it is to such that we
+offer, not an apology, but an explanation.
+</p>
+
+<p style='text-indent:0;'>
+A very large section of the Public
+cling to the belief that Law must be
+as dry as Dust, and Accounting as
+tedious as the Treadmill.
+</p>
+
+<p style='clear:left;'>
+The truth is, it is not the Practice
+of Law or of Accounting that is
+uninteresting, but rather is it the
+Theory which is often rendered so by
+Teachers whom Providence never ordained
+to teach.
+</p>
+
+<p>
+If, therefore, the employment of unorthodox
+methods helps to interest the
+Student in his subject, and to stimulate
+him to further effort, any apology
+would be out of place.
+</p>
+
+
+<div class="ralign" style='margin-right:2em;'>
+<p>
+ERNEST EVAN SPICER.
+</p>
+<p>
+ERNEST C. PEGLER.
+</p>
+</div>
+
+
+<p style='font-size:smaller;margin-left:2em;text-indent:0;'>
+60, Watling Street,<br />
+&nbsp;&nbsp;London, E.C.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;January, 1914.
+</p>
+
+
+
+
+<h2 id='FOREWORD'>
+Foreword.<br />
+<span style='font-size:smaller;'>By D. F. de l'Hoste Ranking, M.A., LL.D.</span>
+</h2>
+
+
+<div class='floatl'>
+<img src='images/dropcap-d.png' alt='N' title='drop cap D' />
+</div>
+<p style='text-indent:0;'>
+De mortuo illo quid dicam?
+"Nilnisi bonum" ut aiunt.
+</p>
+
+<p style='text-indent:0;'>
+Sed quid si nil boni fecit?
+De bonis licet loqui.
+</p>
+
+<p style='text-indent:0;'>
+At si nulla bona reliquit?
+De eo tacere decet: si neque
+bonum fecit nec bona acquisivit nil valet.
+</p>
+
+<p style='text-indent:0;'>
+Sed si bona reliquit in sermonem
+hominum semper venit; vitia operta
+sunt; pecuniam fecit, illa quidem "non
+olet." Quem heredem instituit? Extraneis
+haec omnia livori proxima videntur.
+Te autem si tu aut cognatione aut affinitate
+propinquus exspectatio tenet. An
+mea interest? Si sic habet, quanti?
+Suave est ex magno tollere acervo; ejus
+pecunia quid non facere possim?
+</p>
+
+<p>
+Siste, amice; aliquantulum cogita; supersunt
+multi cognati; fieri potest ut aut cum
+aliis bona partire debeas, aut exheredatus
+sis.
+</p>
+
+<p>
+Gerrae! Sine dubio testamentum fecit:
+et cum ratione constat me alicuius rei legatarium
+esse. Nemo enim magis eum fovit;
+alii omnes cognati asseclae; solus eum amavi.
+</p>
+
+<p>
+Insipiens, inter os et offam multa intervenire
+possunt. Audi de gente Fulvia
+fabellam: de multis mutato nomine narratur.
+</p>
+
+<p>
+(In scena est coenatio Georgii Fusci, argentariorum
+interpretis. Fuscus, bene coenatus,
+alterum cyathum Falerni sorbillat.
+Accurrit uxor, commota; in manu litteras
+resignatas tenet).
+</p>
+
+<p>
+U. Georgi!
+</p>
+
+<p>
+F. Quid tibi nunc est? Num quid novi
+est?
+</p>
+
+<p>
+U. Amita mea Maria decessit!
+</p>
+
+<p>
+F. Bene! nunquam postea illud vile Sabinum
+necesse erit obsorbere: magnum est
+solatium.
+</p>
+
+<p>
+U. At tu Georgi semper id laudasti!
+</p>
+
+<p>
+F. Et tu simul filiaeque semper miratae
+estis Persicam illam detestabilem et psittacum
+dissonum, et laudibus extulistis:
+pretium fuit vetulae placere.
+</p>
+
+<p>
+U. Esto: illa vero suavia erant. At hic
+mihi litterae a cognitore ejus Semaureo
+allatae: dicit se hodie vesperi te conventurum.
+</p>
+
+<p>
+F. Demiror si testamentum fecit! Sin
+minus omnia ad te perveniunt, tu heres ex
+asse; cognati alii desunt.
+</p>
+
+<p>
+U. Est quidem mariti nepos iste.
+</p>
+
+<p>
+F. Nullus: tu sola heres: si intestata
+omnia ad te.
+</p>
+
+<p>
+U. Tabulas vere fecit: cognitor scribit se
+te <ins class='correction' title='Original: conventurun'>conventurum</ins> quia testamentum ad rem
+tuam maxime pertinet.
+</p>
+
+<p>
+F. Mihi crede igitur! Aliquid magni tibi
+legavit: haud verisimile illam quidquam
+juveni Albo legasse: nunquam iliam observavit;
+homo nil est nisi pictor ignotus aut
+aliquid simile: uxorem quoque duxit quamdam
+inopem, et eis saepe amita tua subvenire
+debuit.
+</p>
+
+<p>
+U. Fores pulsantur: advenit cognitor!
+</p>
+
+<p>
+F. Dic famulae ut alteram cyathum ponat.
+</p>
+
+<p>
+(Ingreditur Dominus Semaureus.)
+</p>
+
+<p>
+Quid agis vir doctissime? Mea uxor
+dixit te venturum; nonne ob testamentum
+amitae ejus?
+</p>
+
+<p>
+S. Sic res habet, Fusce; venio ad te quod
+hoc res tua maxime refert; et scio te onus
+suscepturum.
+</p>
+
+<p>
+F. An sic habet? Vetulae illi multa bona
+provenere ut opinor.
+</p>
+
+<p>
+S. Permulta: super haec te consulendum
+putavi. Hic mecum tabulas attuli ut eas
+inspicias.
+</p>
+
+<p>
+F. Bene est; Dignissima erat; cui semper
+plurimum tribui. Falerni sume cyathum.
+</p>
+
+<p>
+S. Benigne dicis; dimidium: bona venia
+uxoris tuae est mihi in animo summas
+testamenti reddere; ad illam quoque pertinet.
+(Testamenta allata resignat.)
+</p>
+
+<p>
+Post nonnulla famulis legata ita instituit:
+</p>
+
+
+<div class="blockquote">
+<p>
+"Fratris filiae Mariae lego Persicam
+et Psittacum quae animalia tantopere
+admirata est, certa fiducia se illis
+hospitium praebituram; eidem etiam
+lego annulum meum gemmatum.
+Nepoti ejusdem Mariae viro Georgio
+Fusco lego omne quod in hypogaeo
+superest vinum illud Falernum quod
+semper laudabat."
+</p>
+</div>
+
+<p>
+F. (In malam rem.)
+</p>
+
+<p>
+S. "Quod ad ceteras possessiones Georgius
+Fuscus heres esto ex asse: (subridet Fuscus
+et uxori in aurem susurrat "ita ut dixi.")
+</p>
+
+<p>
+S. (Conversa tabula) "et rogo eum ut
+cum primum potuerit haereditatem adire,
+omnibus et fundis et mobilibus venditis,
+pecunias in cautionibus publica auctoritate
+factis collocet et fructus reddat nepoti
+mariti mei Jacobo Albo et uxori suae in
+aetatem aut utri eorum vita superarit:
+eis mortuis ut inter liberos eorum caput
+dividat: aut liberis sine prole defunctis
+caput reddat ad sodalitatem Anthropophagis
+Africanis informandis et nutriendis
+institutam: praemio sint fiduciario viginti
+in annum librae."
+</p>
+
+<p>
+F. Anus odiosa et malefica! At enitar ut
+testamentum rescindatur; inofficiosi testamenti
+querelam instituam! Delira fuit!
+</p>
+
+<p>
+S. Immo mentis omnino compos fuit,
+Improbe: sic summa fide clamabo et testabor.
+Verba tua pro tempore et re indecora.
+Tui piget me: evado.
+</p>
+
+<p>
+F. Maria!
+</p>
+
+<p>
+U. Georgi!
+</p>
+
+<p>
+Uterque. Exsecrabilis Illa!
+</p>
+
+<p>
+(Aulaeum tollitur.)
+</p>
+
+<div class='center'>
+<a href='images/hrfig014.png'>
+  <img src='images/fig014.png'
+    title='Charles Augustus Algernon de J...' alt='Charles Augustus Algernon de J...'
+  />
+</a>
+<p class='caption'>Charles Augustus Algernon de Jones
+"... he gave Five Thousand Pounds to
+London's Home for Lost and Straying Hounds."</p>
+</div>
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-vine.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+<h2 id='PROBLEM_1'>
+PROBLEM No. 1.
+</h2>
+
+<div class="poem"><div class="stanza">
+<span>
+Within St. Dunstan's Churchyard rest the bones
+</span><br />
+<span>
+Of Charles Augustus Algernon de Jones,
+</span><br />
+<span>
+Who left, besides a widow, tall and fair,
+</span><br />
+<span>
+Four infant daughters all with ginger hair.
+</span><br />
+
+</div><div class="stanza">
+<span>
+The worldly goods of which he died possessed
+</span><br />
+<span>
+Were valued, net, twelve thousand of the best.
+</span><br />
+<span>
+He died intestate, left no real estate,
+</span><br />
+<span>
+Broke his neck hunting at a five-barred gate.
+</span><br />
+
+</div><div class="stanza">
+<span>
+Two years before he left this vale of tears,
+</span><br />
+<span>
+He justified his wife's most anxious fears,
+</span><br />
+<span>
+He spent ten thousand on a rope of pearls,
+</span><br />
+<span>
+A gift to one of Daly's Chorus Girls.
+</span><br />
+
+</div><div class="stanza">
+<span>
+This was a falling from the narrow course
+</span><br />
+<span>
+Which lasted but a fortnight; then remorse
+</span><br />
+<span>
+O'ercame him, and he gave five thousand pounds
+</span><br />
+<span>
+To London's Home for Lost and Straying Hounds.
+</span><br />
+
+</div><div class="stanza">
+<span>
+This good deed mollified his jealous wife,
+</span><br />
+<span>
+And two years later, when he quitted life,
+</span><br />
+<span>
+The widow buried anger with the bones
+</span><br />
+<span>
+Of Charles Augustus Algernon de Jones.
+</span><br />
+</div></div>
+
+<hr /> <!--
+<tb>
+ -->
+
+
+<div class="poem"><div class="stanza">
+<span class="i02">
+And now as everyone knows
+</span><br />
+<span class="i02">
+This tragedy comes to a close,
+</span><br />
+<span class="i02">
+With fallings and failings
+</span><br />
+<span class="i02">
+And funeral wailings
+</span><br />
+<span class="i02">
+'Mid sighings and sobbings and woes.
+</span><br />
+
+</div><div class="stanza">
+<span class="i02">
+Do not think that this story is lax
+</span><br />
+<span class="i02">
+Or of improbability smacks;
+</span><br />
+<span class="i02">
+I tell you it's true,
+</span><br />
+<span class="i02">
+And I'm waiting for you
+</span><br />
+<span class="i02">
+To say what did the Revenue Tax.
+</span><br />
+</div></div>
+
+<div class='center'>
+<img src='images/footer-pot.png' title='decorative footer' alt='decorative footer' />
+</div>
+<hr class='major' />
+<div class='center'>
+<img src='images/header-pot.png' title='decorative header' alt='decorative header' />
+</div>
+
+<h2>
+PROBLEM No. 2.
+</h2>
+
+
+<p>
+And when Joseph was dead his son
+Benjamin took unto himself a Wife
+and they had issue, two Boys and
+one Girl.
+</p>
+
+<p>
+Now the elder of these two Sons was
+comely to gaze upon and when he was yet
+two years from Man's Estate his Father
+said unto him, "My Son, your Father's
+Brother is old and nearing death. Take
+heed, therefore, lest his wealth be scattered
+amongst the Gentiles." And the Son
+answered, "Fear not, my Father, from
+henceforth I will be unto my Father's
+Brother as a Son."
+</p>
+
+<p>
+But after Seven Days had passed away
+the Uncle died and all his Flocks and
+Herds were left to his Brother Benjamin's
+Children. And on the Seventh Day after
+the Brother's death, the Woman, whom
+Benjamin had taken to wife, gave birth
+to Twin Children, and after Seven more
+Days had passed, the Male Child sickened
+and died. And Benjamin wept for his Son
+and looked not upon the Child that lived,
+and refused all meat, so that he weakened,
+and after Seven more Days he was buried
+in the Tomb of his Fathers (near Shepherd's Bush).
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+<i>N.B.</i>&mdash;There were fortunately no further
+deaths in Benjamin's family, and the
+Uncle's Legacy to his "Brother's Children,"
+which was valued for Probate at
+&pound;12,000, was duly divided between them.
+</p>
+
+<p>
+How much did each receive?
+</p>
+
+<div class='center'>
+<img src='images/footer-vine.png' title='decorative footer' alt='decorative footer' />
+</div>
+<hr class='major' />
+<div class='center'>
+<img src='images/header-vine.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+
+<h2>
+PROBLEM No. 3.
+</h2>
+
+
+<p>
+Sir Hazel Knut, Bart., died,
+and the whole of his Estate, after the
+payment of Estate Duty, Debts, and
+all expenses, amounted to exactly &pound;15,000.
+</p>
+
+<p>
+He bequeathed the following Legacies,
+all free of Duty except the Settled
+Property.
+</p>
+
+
+<div class="blockquote">
+<p>
+<i>Lady Knut</i>, his widow, &pound;2,000.
+</p>
+
+
+<div class="blockquote">
+<p>
+Lady Knut also had the use of a
+Governess Cart, together with a Shetland
+Pony, for life, with remainder over to
+the Toddington Cottage Hospital. These
+were valued for Probate at &pound;60, and the
+value of the life interest was computed
+at &pound;12.
+</p>
+</div>
+
+<p>
+<i>George Filbert</i> (aged 12), a son of Lady
+Knut by a former husband, &pound;200.
+</p>
+
+<p>
+<i>Selina Knut</i>, daughter (aged 4), &pound;1,200.
+</p>
+
+<p>
+<i>George Lightfoot</i>, son-in-law, who married
+Sir Hazel's charming daughter Rose,
+&pound;1,200. Rose predeceased Sir Hazel by
+4 years, but the Twins survived. To
+each of these children Sir Hazel left
+One Thousand Guineas.
+</p>
+
+<p>
+<i>Mrs. Gubbins</i>, Sir Hazel's aged mother, &pound;1,000.
+</p>
+
+<p>
+<i>Mr. Gubbins</i>, Stepfather to Sir Hazel, the
+Racehorse "Fleetfoot," aged 14, by
+Footrest out of Fleet Rabbit, valued at
+&pound;19 19s. 0d.
+</p>
+
+<p>
+<i>Rev. Stirling Knut</i>, nephew, &pound;100.
+</p>
+</div>
+<p style='text-indent:0;'>
+And &pound;50 each to the following:
+</p>
+<div class='blockquote'>
+
+<p>
+<i>Cutforth Crawley</i>, Lady Knut's sister's son.
+</p>
+
+<p>
+<i>Lady Augusta Ramsbotham</i> (sister-in-law,
+Lady Knut's eldest sister).
+</p>
+
+<p>
+<i>Dorothy Smith</i>, who married Robert, Sir
+Hazel's eldest son, 3 months after the funeral.
+</p>
+</div>
+
+<p>
+The Residue of the Estate was left
+absolutely to Robert.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+Show how much Sir Robert Knut inherited.
+</p>
+
+<div class='center'>
+<img src='images/footer-pot.png' title='decorative footer' alt='decorative footer' />
+</div>
+
+<div class='center'>
+<a href='images/hrfig021.png'>
+  <img src='images/fig021.png'
+    title='The Racehorse, "Fleetfoot." By...' alt='The Racehorse, "Fleetfoot." By...'
+  />
+</a>
+<p class='caption'>The Racehorse, "Fleetfoot." By "Footrest" out of
+"Fleet Rabbit." Aged 14.</p>
+</div>
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-pot.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+<h2>
+PROBLEM No. 4.
+</h2>
+
+
+<p>
+Mr. Mordecai Moribund
+was a pessimist during life
+and died a violent death. His
+facial appearance was much disfigured by
+a sad squint, and this affliction to his
+eyes contributed in no small degree to
+the tragedy which at once deprived Mrs.
+Moribund of a husband and a son. The
+son, a bright youth of twenty summers,
+had been sent down from Oxford University
+by the authorities rather as a
+warning to others than for any great
+offence which he had committed. Nevertheless,
+the disgrace was keenly felt by
+his mother, and it was for this reason
+that Mr. Moribund decided to take him
+for a trip to India, until time had healed
+the wound.
+</p>
+
+<p>
+Arrived in India, Mr. Moribund
+promised his son, Morton, to arrange
+for a tiger shooting expedition. This
+fatal promise caused all the trouble, for
+Mr. Moribund, owing to his visual defects,
+thought he observed a tiger approaching
+from the west and forthwith discharged
+his rifle. The bullet missed the tiger
+and passed through the head of the unfortunate
+Morton, who was thereby killed
+on the spot. Mr. Moribund, horrified by
+the accident, moved his position and slid
+from the back of the elephant right into
+the jaws of the infuriated animal. Assistance
+was rendered immediately, and Mr.
+Moribund was rescued from his unfortunate
+position, but not before he had
+sustained injuries from which he succumbed
+four days subsequently.
+</p>
+
+<p>
+Mr. Moribund, by his will, left everything
+of which he was possessed to his
+widow absolutely. This property, after
+deducting debts, amounted to &pound;137,500,
+but an examination of his affairs disclosed
+the fact that two years previously he had
+conveyed as an absolute gift to his son,
+Morton, the sum of &pound;100,000. This
+money had been invested by Morton in
+Bearer Bonds of the Royal Japanese
+Steamship Company at an average price
+of &pound;80%, but on the date of Morton's
+death these Bonds stood at &pound;120%.
+Morton, by will, had left his entire fortune
+to a Miss Flossie Teazle, an actress
+whom he had met at Oxford.
+</p>
+
+<div class='center'>
+<a href='images/hrfig025.png'>  <img src='images/fig025.png'
+    title='The Death of Mr. Mordecai Mori...' alt='The Death of Mr. Mordecai Mori...'
+  /></a>
+<p class='caption'>The Death of Mr. Mordecai Moribund.</p>
+</div>
+
+<p>
+Show what duties were payable to the
+State as a direct consequence of the
+Tragedy.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+<i>Note.</i>&mdash;The following epitaph, shamelessly
+copied from one in Malmesbury
+Abbey, was inscribed on Mr.
+Moribund's Tomb:&mdash;
+</p>
+
+
+<div class="poem"><div class="stanza">
+<span class="i02">
+    In bloom of life
+</span><br />
+<span class="i02">
+    He's snatched from hence,
+</span><br />
+<span class="i02">
+    He had not room
+</span><br />
+<span class="i02">
+    To make defence;
+</span><br />
+<span class="i02">
+    For Tyger fierce
+</span><br />
+<span class="i02">
+    Took life away,
+</span><br />
+<span class="i02">
+    And here he lies
+</span><br />
+<span class="i02">
+    In bed of clay
+</span><br />
+<span>
+Until the Resurrection Day.
+</span><br />
+</div></div>
+
+
+<div class='center'>
+<img src='images/footer-vine.png' title='decorative footer' alt='decorative footer' />
+</div>
+<hr class='major' />
+<div class='center'>
+<img src='images/header-vine.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+<h2>
+PROBLEM No. 5.
+</h2>
+
+
+<p>
+It is a strange circumstance that little
+men with red hair usually have large
+families. At any rate Septimus
+Hawkins had red hair and twelve children,
+of whom eleven were living, but strangest
+of all he died intestate worth &pound;122,600
+subject to the payment of Estate Duty,
+and of which the Real property was valued
+at &pound;36,000.
+</p>
+
+<div class='center'>
+<a href='images/hrfig029.png'>  <img src='images/fig029.png'
+    title='"Mrs. Hawkins had been very
+be...' alt='"Mrs. Hawkins had been very
+be...'
+  /></a>
+<p class='caption'>"Mrs. Hawkins had been very
+beautiful in her younger days."</p>
+</div>
+
+<p>
+Mrs. Hawkins had been very beautiful
+in her younger days, but time and
+children had robbed her of her rosy
+cheeks; and realising that widow's weeds
+did not become her, she withdrew shortly
+after the funeral to the seclusion of a
+country life, where she spent her time
+ministering to the sick, and looking
+after her late daughter Pearl's two small
+children. The names of her children in
+chronological order were as follows:&mdash;
+</p>
+<div class='center'>
+<table>
+  <tr>
+    <td class="r" style="width:2em;">1.</td>
+    <td class="r" style="width:0.5em;">P</td>
+    <td>earl. Died 1912</td>
+  </tr>
+  <tr>
+    <td class="r">2.</td>
+    <td class="r">E</td>
+    <td>dward.</td>
+  </tr>
+  <tr>
+    <td class="r">3.</td>
+    <td class="r">R</td>
+    <td>ebecca.</td>
+  </tr>
+  <tr>
+    <td class="r">4.</td>
+    <td class="r">S</td>
+    <td>elina.</td>
+  </tr>
+  <tr>
+    <td class="r">5.</td>
+    <td class="r">E</td>
+    <td>mma.</td>
+  </tr>
+  <tr>
+    <td class="r">6.</td>
+    <td class="r">V</td>
+    <td>era.</td>
+  </tr>
+  <tr>
+    <td class="r">7.</td>
+    <td class="r">E</td>
+    <td>velyn.</td>
+  </tr>
+  <tr>
+    <td class="r">8.</td>
+    <td class="r">R</td>
+    <td>ichard.</td>
+  </tr>
+  <tr>
+    <td class="r">9.</td>
+    <td class="r">A</td>
+    <td>melia.</td>
+  </tr>
+  <tr>
+    <td class="r">10.</td>
+    <td class="r">N</td>
+    <td>athaniel.</td>
+  </tr>
+  <tr>
+    <td class="r">11.</td>
+    <td class="r">C</td>
+    <td>hlotilde.</td>
+  </tr>
+  <tr>
+    <td class="r">12.</td>
+    <td class="r">E</td>
+    <td>rmyntrude.</td>
+  </tr>
+</table>
+</div>
+<p>
+How should the property of the late
+Septimus Hawkins be distributed, and
+how much did the respective beneficiaries
+receive?
+</p>
+
+<div class='center'>
+<img src='images/footer-pot.png' title='decorative footer' alt='decorative footer' />
+</div>
+<hr class='major' />
+<div class='center'>
+<img src='images/header-pot.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+
+<h2>
+PROBLEM No. 6.
+</h2>
+
+
+<p>
+Very few men can state with any
+degree of accuracy how long they
+will live, but Nathaniel Hibbert
+told his Wife he would die at 8 o'clock in
+the morning of Tuesday, the 22nd April,
+1913, and he did die at that very time
+on that very day. He was standing on
+some scaffolding when a platform gave
+way under his very feet, and he broke
+his spinal cord. In other words he was
+hanged. His Solicitor urged him to make
+a Will and the prison Chaplain added his
+earnest entreaties, but Mr. Hibbert turned
+a deaf ear to all such suggestions. Even
+the sight of his Wife and only child did
+not affect his determination, and he died
+intestate.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+What happened to the &pound;1,200 of which
+he died possessed?
+</p>
+
+<div class='center'>
+<img src='images/footer-vine.png' title='decorative footer' alt='decorative footer' />
+</div>
+
+<div class='center'>
+<a href='images/hrfig034.png'>  <img src='images/fig034.png'
+    title='"Mr. Chicory loved his wife al...' alt='"Mr. Chicory loved his wife al...'
+  /></a>
+<p class='caption'>"Mr. Chicory loved his wife almost as
+much as Mrs. Chicory loved her husband."</p>
+</div>
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-vine.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+
+<h2>
+PROBLEM No. 7.
+</h2>
+
+
+<p>
+Mr. Chicory loved his wife
+almost as much as Mrs. Chicory
+loved her husband. They had
+lived together for nearly forty years, and
+every Saturday morning throughout that
+long time Mr. Chicory had faithfully
+handed over to his wife his entire
+earnings, which were not much, and
+deducted only 5s. per week, which
+served as pocket money for Mr.
+Chicory, and enabled him to provide
+coals during the winter months, collection
+money at church, oil for the lamps,
+and sundry presents from time to time to
+his children, to say nothing of the Lame
+Crossing Sweeper.
+</p>
+
+<p>
+Each week a small sum was deposited
+in the Post Office Savings Bank, and
+when Mr. Chicory died, not only had he
+to the credit of this account a balance of
+&pound;108 0s. 10d., but his Cottage, which was
+valued at &pound;90, was his own Freehold
+Property. He had made a Will and paid
+the Solicitor 10s. 6d. for drawing it up,
+and nobody could have read what he said
+about his old wife, to whom he left
+everything, without feeling a lump in the
+throat.
+</p>
+
+<p>
+On the day of his funeral not one blind
+was undrawn in all the Cottages round
+about, and Mr. Michaelmas, the Carriage
+Builder, sent a landau specially for Mrs.
+Chicory. At least one hundred people
+went to the Church, where the good old
+Vicar read the Service, and the Lame
+Crossing Sweeper painted his
+broom-handle black.
+</p>
+
+<p>
+Mrs. Chicory, some weeks later, paid
+the Solicitor another 10s. 6d., as a fee,
+and asked him to do the rest.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+What did he do?
+</p>
+
+
+<div class='center'>
+<img src='images/footer-pot.png' title='decorative footer' alt='decorative footer' />
+</div>
+<hr class='major' />
+<div class='center'>
+<img src='images/header-pot.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+<h2>
+PROBLEM No. 8.
+</h2>
+
+
+<p>
+Men who are mean during life and
+who would grudge a present of
+5s. to the postman at Christmas,
+or who would spend a whole day in
+another man's motor car and fail to tip
+the Chauffeur at the end of the journey,
+often prove very generous with their
+money when they die and can no longer
+enjoy the satisfaction of possession, which
+during lifetime they cherished so dearly.
+</p>
+
+<p>
+Such creatures usually bequeath their
+property to Charitable Institutions at the
+expense of deserving relatives, who have,
+at any rate, in Equity, a claim to at least
+some small share thereof.
+</p>
+
+<p>
+The Law of Italy corrects this injustice,
+and no man can will away at death the
+whole of his property to strangers, if he
+leaves a Widow or Relatives living of a
+nearer kinship than a First Cousin.
+</p>
+
+<p>
+Now Vincentio Dorando was an Italian
+subject, whose nearest living relative was
+a First Cousin once removed. He had
+been educated at Oxford and had spent
+the greater portion of his life in England,
+but at the time of his death he was
+domiciled in France. He left no property
+of any sort in Italy or France, and no
+duties were found to be payable in either
+of these Countries. He had property in
+England, however, which consisted of
+&pound;15,000 Japanese 4<span class='numer'>1</span>&frasl;<span class='denom'>2</span>&frac12; per cent. Bonds at 94,
+a Freehold House valued at &pound;2,500, and
+some Furniture and Pictures which were
+stored at Messrs. Hudson's Repository,
+and which were valued for Probate at
+&pound;480. The only debt due at death was a
+Tailor's Bill for &pound;62.
+</p>
+
+<p>
+He had made a perfectly valid Will in
+England, by which he bequeathed all his
+property, with the exception of his Real
+Estate, to his old Oxford friend, Mr. James
+Duncan, for life, with remainder over to
+Mr. Duncan's eldest son. He left the
+Freehold House to another Oxford friend,
+Mr. Wallstone.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+Show what Duties were payable to the
+Inland Revenue Authorities upon the death
+of Mr. Vincentio Dorando.
+</p>
+
+<div class='center'>
+<img src='images/footer-vine.png' title='decorative footer' alt='decorative footer' />
+</div>
+
+<div class='center'>
+ <a href='images/hrfig040.png'> <img src='images/fig040.png'
+    title='The Jollybuck Twins...' alt='The Jollybuck Twins...'
+  /></a>
+<p class='caption'>The Jollybuck Twins
+&mdash;as they appeared, no doubt, to Mrs. Jollybuck and the Nurse&mdash;prospective
+world-geniuses.</p>
+</div>
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-vine.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+
+<h2>
+PROBLEM No. 9.
+</h2>
+
+
+<p>
+The Nurse described them as the
+most wonderful Twins she had ever
+seen; but then Monthly Nurses
+always speak in this way!
+</p>
+
+<p>
+The Mother said that she had never
+known children exhibit such intelligence at
+so early an age; but then Mothers always
+think in that way, especially of their first!
+</p>
+
+<p>
+The Father wanted to drown the yelling
+little brats, and had turned on both taps in
+the bathroom; but then Fathers always
+want to do something rash!
+</p>
+
+<p>
+Altogether it was a very merry little
+family, and when the Twins were three
+months old and had been duly christened
+and vaccinated, Mr. Jollybuck called on his
+Solicitor and altered his Will so as to
+provide for the family which had been
+so anxiously hoped for and so long in
+coming.
+</p>
+
+<p>
+But alas for Mrs. Jollybuck, for whom
+Widow's weeds were to be so soon necessary,
+and a plague on all false chemists
+who fail to label their blue bottles "With
+Care." Mr. Jollybuck swallowed Carbolic
+Acid instead of Ipecacuanha Wine, and
+after the payment of Estate Duty, Debts
+and all Expenses, except Legacy Duty,
+his Estate consisted of &pound;16,000 Cash on
+Deposit at the London, City and Midland
+Bank, &pound;15,000 India 3<span class='numer'>1</span>&frasl;<span class='denom'>2</span>% Stock at 92,
+and Furniture valued at &pound;500. By his
+Will he left:
+</p>
+
+
+<div class="blockquote">
+<p>
+(a) India Stock and the Furniture
+to his Widow, free of Duty.
+</p>
+
+<p>
+(b) &pound;6,000 to his Widow.
+</p>
+
+<p>
+(c) &pound;12,000 and the Residue of his
+Estate to his only Son.
+</p>
+
+<p>
+(d) &pound;12,000 to his Brother.
+</p>
+
+<p>
+(e) &pound;500 to his only Daughter.
+</p>
+</div>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+Draw up a Statement showing the
+amount each beneficiary under Mr.
+Jollybuck's Will is entitled to receive.
+</p>
+
+
+<div class='center'>
+<img src='images/footer-pot.png' title='decorative footer' alt='decorative footer' />
+</div>
+<hr class='major' />
+<div class='center'>
+<img src='images/header-pot.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+<h2>
+PROBLEM No. 10.
+</h2>
+
+
+<p>
+Family Trees are almost as
+interesting to study as Bradshaw,
+and, at any rate in this case, quite
+as instructive. In fact, without a Tree
+it is almost impossible to remember who
+Mrs. Gubbins really was.
+</p>
+
+<p>
+The following, which eliminates all
+irrelevant matters, gives the descendants
+of George Gubbins, the founder of the
+family:&mdash;
+</p>
+
+<div style='border:1px solid black;padding:1em 0 1em 4em;'>
+<p style='text-indent:3em;'>GENEALOGICAL TREE OF THE GUBBINS FAMILY</p>
+<pre>
+                  George Gubbins
+   _____________________|___________________
+   |        |         |                    |
+George    John    Charles                Oscar
+   |        |         |                    |
+ John    George    Oscar                Charles
+   |        |         |        ____________|_____________
+   |        |         |        |       |       |        |
+George    John    Charles    Rose   Violet   Daisy   Poppy
+</pre>
+</div>
+
+<p>
+Now John Gubbins, the grandson of
+George Gubbins, founder of the Gubbins
+Family, married Elizabeth Greatheart, on
+Christmas-Day, and on the anniversary
+of their wedding day little George Gubbins
+first saw the light. But little George knew
+not his father, for John Gubbins died when
+George was but two months old.
+</p>
+
+<p>
+In his Will John Gubbins appointed
+his Cousin, George Gubbins, to be his
+executor, and thus it was that George
+Gubbins was brought into close touch
+with the Widow Gubbins.
+</p>
+
+<p>
+Friendship ripened into love and resulted
+in Mrs. John Gubbins becoming Mrs.
+George Gubbins. In due course Mrs.
+George Gubbins presented her husband
+with a little boy, who was christened John
+after his first cousin once removed.
+</p>
+
+<p>
+Little John grew in grace and played
+very prettily with little George Gubbins,
+who was his stepbrother and second cousin
+rolled into one, and altogether it was a
+very happy little party, until one day
+little John's Father, George Gubbins, was
+knocked down by a Steam Roller just in
+front of his own house, and was rolled
+into his own gravel drive.
+</p>
+
+<p>
+Now the Steam Roller belonged to a
+Company, of which Oscar Gubbins, son
+of Charles Gubbins and grandson of
+George Gubbins the Founder of the
+Family, was a Director.
+</p>
+
+<p>
+Hearing of the accident he hastened to
+comfort the Widow in her affliction, and
+succeeded so well that after a decent
+interval had elapsed Mrs. George Gubbins
+became Mrs. Oscar Gubbins.
+</p>
+
+<p>
+A child was born two years later, three
+months prior to the death of Oscar
+Gubbins, the Father. The little boy was
+christened Charles, and after the funeral
+of Oscar Gubbins, Mrs. Gubbins took her
+three little boys, George, John and Charles,
+to Ventnor, in the Isle of Wight, for a
+change of air.
+</p>
+
+<p>
+It was in the lounge of the Sea View
+Hotel at Ventnor that Mrs. Gubbins
+met Mr. Charles Gubbins, first cousin to
+her three late husbands.
+</p>
+
+<p>
+Now Mr. Gubbins had ofttimes heard
+of the much-weeded Widow, but when
+he saw her for the first time with the
+naked eye, he realised what happy men
+John, George and Oscar Gubbins must
+have been.
+</p>
+<div class='center'>
+ <a href='images/hrfig046.png'> <img src='images/fig046.png'
+    title='"When Mr. Charles Gubbins saw ...' alt='"When Mr. Charles Gubbins saw ...'
+  /></a>
+<p class='caption'>"When Mr. Charles Gubbins saw her for the first time
+with the naked eye, he realised what happy men
+John, George and Oscar Gubbins must have been."</p>
+</div>
+
+<p>
+And when Mrs. Gubbins first saw Mr.
+Charles Gubbins she thought how empty
+widowhood really was, and what fine men
+were the Grandsons of George Gubbins,
+Founder of the Gubbins Family.
+</p>
+
+<p>
+Such feelings were not to be denied,
+and after three months of courtship Mr.
+Charles Gubbins and Mrs. Oscar Gubbins
+were declared man and wife by the Rev.
+Stephen Collins.
+</p>
+
+<p>
+For 10 years Mr. and Mrs. Charles
+Gubbins lived together as happily as a
+married couple could, and four beautiful
+daughters, Rose, Violet, Daisy and Poppy
+were born to them.
+</p>
+
+<p>
+And then Mrs. Gubbins died intestate
+leaving Personal Property valued for
+Probate at &pound;12,000, and Real Property
+valued at &pound;8,000.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+How was this divided?
+</p>
+
+
+<div class='center'>
+<img src='images/footer-vine.png' title='decorative footer' alt='decorative footer' />
+</div>
+
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-vine.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+<h2>
+PROBLEM No. 11.
+</h2>
+
+
+<p>
+Some people say there is no romance in
+business and that a Brass Plate never
+brings Clients. Don't you believe
+that for one moment. Why, Jones owed all
+his misfortunes in life to a Brass Plate and
+a Motor 'Bus! It happened as follows:&mdash;
+</p>
+
+<p>
+Mrs. James Wardle's Husband died on
+the 30th April, 1914. He was always called
+Mrs. Wardle's Husband, and he very
+properly left her his entire fortune, which,
+at his death, consisted of the following
+property:&mdash;
+</p>
+
+
+<div class="blockquote" style='text-indent:-1em;'>
+<p>
+Freehold Property valued at &pound;6,500,
+subject to a Mortgage of &pound;4,500 at 5%
+per annum. The Interest was paid
+up to the 31st March, 1914.
+</p>
+
+<p>
+&pound;3,500 Local Loans 3% Stock quoted
+at 86-88.
+</p>
+
+<p>
+&pound;2,750&nbsp;&nbsp;2<span class='numer'>3</span>&frasl;<span class='denom'>4</span>% Annuities quoted at 77-8.
+</p>
+
+<p>
+&pound;2,000 Caledonian Railway Consolidated
+4% Stock quoted at 98-100
+cum. div.
+</p>
+
+<p>
+&pound;800 3% Bradford Corporation Stock
+quoted at 95<span class='numer'>1</span>&frasl;<span class='denom'>2</span>-96<span class='numer'>5</span>&frasl;<span class='denom'>8</span> cum. div.
+</p>
+
+<p>
+Life Policies and Bonuses &pound;1,575.
+</p>
+
+<p>
+Household Furniture &pound;350.
+</p>
+
+<p>
+&pound;1,500 Loan at 5% per annum. The
+Interest had been received up to
+31st December, 1913.
+</p>
+
+<p>
+Sundry Debts due to Testator, &pound;346.
+</p>
+
+<p>
+Sundry Debts due by Testator, &pound;550.
+</p>
+
+<p>
+Funeral Expenses, &pound;42.
+</p>
+</div>
+
+<p>
+Mr. Wardle had for many years left
+his affairs entirely in the hands of his
+Solicitor, but Mrs. Wardle, who was
+Sole Executrix, thought&mdash;and very
+properly too&mdash;that the combination of
+a Solicitor and a Professional Accountant
+was to be preferred. She therefore
+journeyed to the City with the intention
+of consulting her Stockbroker on the
+matter, but by a curious Providential
+dispensation, the Motor Omnibus broke
+down just opposite Jones' office, and his
+Brass Plate attracted the Sweet Lady's
+attention!
+</p>
+
+<p>
+He prepared the Estate Duty Account,
+the affidavit being delivered on the 31st
+July, 1914, and he is now Mrs. James
+Wardle's Second Husband.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+Do as Jones did, but ignore Income
+Tax, and beware of Widows.
+</p>
+
+<div class='center'>
+<img src='images/footer-pot.png' title='decorative footer' alt='decorative footer' />
+</div>
+<div class='center'>
+ <a href='images/hrfig052.png'> <img src='images/fig052.png'
+    title='"Julius Jones was a poet."...' alt='"Julius Jones was a poet."...'
+  /></a>
+<p class='caption'>"Julius Jones was a poet."</p>
+</div>
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-pot.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+
+<h2>
+PROBLEM No. 12.
+</h2>
+
+
+<p>
+Julius Jones was a poet, and
+although he died prematurely on
+the 30th June, 1914, his name will
+be remembered by posterity as the author
+of the beautiful Hymn, of which the first
+line runs "Farewell, old buck, we part
+to meet again!"
+</p>
+
+<p>
+He left the following Estate:&mdash;
+</p>
+<div class='center'>
+<table>
+  <tr>
+    <td>Cash at Bank</td>
+    <td class="r" style="width:6em;">&pound;1,500</td>
+  </tr>
+  <tr>
+    <td>Household Furniture</td>
+    <td class="r">350</td>
+  </tr>
+  <tr>
+    <td>Life Policies</td>
+    <td class="r">2,000</td>
+  </tr>
+  <tr>
+    <td>Securities valued at death at</td>
+    <td class="r">18,650</td>
+  </tr>
+  <tr>
+    <td>Freehold Property</td>
+    <td class="r">8,500</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td class="r"><hr style='width:4em;margin-right:0;' /></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td class="r">&pound;31,000</td>
+  </tr>
+</table>
+</div>
+<p>
+Liabilities at death were &pound;200, and
+Funeral Expenses amounted to &pound;30.
+Legal Expenses were also paid, amounting
+to &pound;170.
+</p>
+
+<p>
+The Securities and the Furniture
+realised &pound;19,000 and &pound;300 respectively.
+</p>
+
+<p>
+A Legacy of &pound;500 was left to his
+Nephew (free of duty).
+</p>
+
+<p>
+The eldest Son of the Testator
+(Patrick) was given the option by the
+Will to take over the Freehold Property
+at &pound;7,500, which he elected to do. The
+residue of the Estate was to be divided
+equally between the three children of
+the Testator:&mdash;
+</p>
+
+<p style='text-indent:0;margin-left:6em;'>
+Patrick,<br />
+Peter,<br />
+      Paul,
+</p>
+
+<p style='text-indent:0;'>
+but he directed that the amounts of &pound;3,000
+&pound;2,000 and &pound;1,000 advanced to them
+respectively on the 1st June, 1911, were
+to be brought into hotchpot.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+Prepare an Account showing the
+division of the residue, taking into
+account the Duties payable, but ignoring
+Interest on Advances.
+</p>
+
+
+<div class='center'>
+<img src='images/footer-vine.png' title='decorative footer' alt='decorative footer' />
+</div>
+<div class='center'>
+ <a href='images/hrfig056.png'> <img src='images/fig056.png'
+    title='"Duly witnessed by his aged Ho...' alt='"Duly witnessed by his aged Ho...'
+  /></a>
+<p class='caption'>"Duly witnessed by his aged Housekeeper,
+Mrs. Uskins, and the Gardener."</p>
+</div>
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-vine.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+
+<h2>
+PROBLEM No. 13.
+</h2>
+
+
+<p>
+It would be indelicate to indicate the
+exact portion of Mr. Hobson's
+anatomy that was so fiercely attacked
+by the mad dog, but it is sufficient to
+say that the bite was the indirect cause
+of his death.
+</p>
+
+<p>
+He anticipated the end, for shortly
+before he passed away he called in his
+Solicitor, Mr. Crawley, and made a fresh
+Will, which was duly witnessed by his
+aged Housekeeper, Mrs. Uskins, and the
+Gardener.
+</p>
+
+<p>
+The Estate, which consisted entirely of
+Personal Property, comprised:&mdash;
+</p>
+
+
+<div class="blockquote">
+<p>
+(1) Share in the firm of Hobson Bros., &pound;11,500.
+</p>
+
+<p>
+(2) Bonds to Bearer valued at &pound;6,300.
+</p>
+
+<p>
+(3) Cash at Bank &pound;220.
+</p>
+</div>
+
+<p>
+The debts due by deceased, including
+a Loan from the Bank secured on the
+Bonds to Bearer, amounted to &pound;3,160, and
+the Funeral Expenses came to &pound;42.
+</p>
+
+<p>
+The  Property  was  bequeathed as follows:&mdash;
+</p>
+
+
+<div class="blockquote">
+<p>
+Mrs. Hobson (Widow), &pound;2,500.
+</p>
+
+<p>
+George Hobson (Son, aged 27), &pound;2,000.
+</p>
+
+<p>
+Selina Hobson (Daughter, aged 18), &pound;2,000.
+</p>
+
+<p>
+Wickham Crawley (Solicitor), &pound;200.
+</p>
+
+<p>
+Maria Hawkins (Niece, aged 28), &pound;1,000.
+</p>
+
+<p>
+George Hobson, Junr. (Grandson, aged 4), &pound;1,500.
+</p>
+
+<p>
+Mrs. Uskins (Housekeeper), &pound;500.
+</p>
+
+<p>
+Mrs. Rumbolt (Deceased Brother's Wife), &pound;500.
+</p>
+
+<p>
+Mrs. Hobson, Senr. (Deceased's Mother), &pound;2,000,
+</p>
+
+<p>
+and the Residue to the Widow absolutely.
+</p>
+</div>
+
+<p>
+Prepare a Distribution Account.
+</p>
+
+
+<div class='center'>
+<img src='images/footer-pot.png' title='decorative footer' alt='decorative footer' />
+</div><div class='center'>
+ <a href='images/hrfig060.png'> <img src='images/fig060.png'
+    title='"London and North Western Cons...' alt='"London and North Western Cons...'
+  /></a>
+<p class='caption'>"London and North Western Consolidated Stock."</p>
+</div>
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-pot.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+
+<h2>
+PROBLEM No. 14.
+</h2>
+
+
+<p>
+Solomon Solfar was a solemn
+man, and his Will was proved in
+solemn form. He died quietly in
+his bed on the 1st April, 1912, leaving
+a Widow, two Sons (Matthew and Mark),
+and one Daughter (Mary).
+</p>
+
+<p>
+On the 1st April, 1913, after all Debts,
+Testamentary and other Expenses had
+been paid, the Estate consisted as follows:&mdash;
+</p>
+
+
+<div class="blockquote" style='text-indent:-1.5em;'>
+<p>
+&pound;6,000 2<span class='numer'>3</span>&frasl;<span class='denom'>4</span>% Annuities at 76<span class='numer'>5</span>&frasl;<span class='denom'>8</span>.
+</p>
+
+<p>
+&pound;2,000 Swansea Corporation 3% Stock
+at 83 (Interest payable 1st January
+and 1st July).
+</p>
+
+<p>
+&pound;6,000 London and North Western
+Consolidated 4% Stock at 103
+(Dividends payable 15th February
+and 15th August).
+</p>
+
+<p>
+1,000 Birmingham Small Arms Cum.
+5% Preference Shares of &pound;5
+each at &pound;5<span class='numer'>1</span>&frasl;<span class='denom'>4</span> (Dividends payable
+1st March and 1st September).
+</p>
+
+<p>
+&pound;5,000 British Westinghouse 4%
+Debenture Stock at 63 (Interest
+payable 1st January and 1st July).
+</p>
+</div>
+
+<p>
+Mr. Solfar made during his lifetime
+advances of &pound;500 to each of his Sons,
+which at his death were brought into
+Hotchpot, and interest charged thereon
+at 5% per annum. He directed his
+Estate to be left in Trust, the Income
+to be applied, first in payment of &pound;75 a
+quarter to Mrs. Solfar, and the balance
+to be distributed half-yearly in equal shares
+to Matthew, Mark and Mary.
+</p>
+
+<p>
+Write up the books of the Trust,
+ignoring Income Tax, for the year ending
+31st March, 1914, the balance of Income
+in hand on 1st April, 1913 (after making
+all necessary payments to the beneficiaries)
+being &pound;12 0s. 0d.
+</p>
+
+
+<div class='center'>
+<img src='images/footer-vine.png' title='decorative footer' alt='decorative footer' />
+</div><div class='center'>
+ <a href='images/hrfig064.png'> <img src='images/fig064.png'
+    title='Mr. Hopkins bodyguard, The Pr...' alt='Mr. Hopkins bodyguard, The Pr...'
+  /></a>
+<p class='caption'>Mr. Hopkins' bodyguard, The Pride of Bristol.</p>
+</div>
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-vine.png' title='decorative header' alt='decorative header' />
+</div>
+
+<h2>
+PROBLEM No. 15.
+</h2>
+
+
+<p>
+The life of Hezekiah Hopkins had
+been a warning rather than an
+example to others, and the administration
+of his affairs at death caused his
+Executors and Trustees to use words
+which are only permissible amongst gentlemen
+when the ladies have withdrawn from
+the dinner table.
+</p>
+
+<p>
+Mr. Hopkins died on the 25th June, 1913.
+</p>
+
+<p>
+His Will had been proved, Estate
+Duty and Legacy Duty had been paid,
+but the Trust could not be closed owing
+to the fact that the Residuary Estate
+had been left to Nathaniel Hopkins, a
+nephew, for life with remainder over to
+the said Nathaniel's eldest god-son Walter
+Blackside, subject to an annuity of &pound;200
+which the Testator had <ins class='correction' title='Original: convenanted'>covenanted</ins> to
+pay to the "Pride of Bristol," a prize
+fighter, who had acted as bodyguard to
+Mr. Hopkins during that gentleman's
+earthly peregrinations.
+</p>
+
+<p>
+The Residuary Estate consisted of the
+following property:&mdash;
+</p>
+
+
+<div class="blockquote" style='text-indent:-1.5em;'>
+<p>
+(1) Leasehold Property having 30
+years to run, producing &pound;900 per
+annum. The property, which was
+valued for probate at &pound;15,000, and
+which was subject to a Ground Rent
+of &pound;100 per annum, was sold on
+on the 24th June, 1914, for &pound;16,400
+and the proceeds invested on the
+following day in Consols at 73, including
+brokerage, &amp;c.
+</p>
+
+<p>
+(2) Deceased's Share in the firm of
+Hezekiah Hopkins &amp;Co. This
+amounted to &pound;18,000 upon the death
+of Mr. Hopkins, and, according to
+the Partnership Deed, was to be
+paid out by instalments of &pound;6,500
+a year including interest at 5% on
+the unpaid balances. The first instalment
+was to be paid on the first
+anniversary of deceased's death.
+</p>
+
+<p>
+(3) A Reversionary Interest in the
+Estate of his Uncle Mr. John
+Oppit, the life interest of which was
+being enjoyed by Mrs. Oppit. This
+Reversionary Interest was valued,
+at the death of Mr. Hopkins for
+probate purposes, at &pound;850, and was
+retained until the 25th June, 1916,
+when it fell into possession. It then
+consisted of &pound;1,500 India 3<span class='numer'>1</span>&frasl;<span class='denom'>2</span>% at 88.
+</p>
+
+<p>
+(4) &pound;10,000 invested in a Loan redeemable
+on the 24th June, 1915, with
+interest at 10% per annum payable
+half-yearly on the 25th December
+and the 24th June in each year.
+</p>
+
+<p>
+The Trustees decided on their
+own responsibility to retain this
+investment, which was redeemed
+on the due date and the interest
+paid in the meanwhile.
+</p>
+
+<p>
+(5) &pound;10,000 India 3% Stock at 84,
+purchased by Deceased on 18th
+June, 1913.
+</p>
+</div>
+
+<p>
+Upon the 25th June in each year the
+balance of Corpus Realised was to be
+placed on deposit with the Hong Kong
+and Shanghai Bank at 4%, less any fraction
+of &pound;100 which was to be retained on
+Current Account at the Union of London
+and Smith's Bank.
+</p>
+
+<p>
+Mr. Nathaniel Hopkins died on the
+25th June, 1916.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+Write up the books showing the position
+of affairs when Mr. Blackside came into
+the property, ignoring Income Tax.
+</p>
+
+<div class='center'>
+<img src='images/footer-pot.png' title='decorative footer' alt='decorative footer' />
+</div>
+<hr class='major' />
+<div class='center'>
+<img src='images/header-pot.png' title='decorative header' alt='decorative header' />
+</div>
+
+<h2>
+PROBLEM No. 16.
+</h2>
+
+
+<p>
+Mrs. Wiggins was the Life
+Tenant and Mr. Gilbert Gunter
+was the Remainderman of the
+Property left by the late Ebenezer Wiggins.
+</p>
+
+<p>
+Mr. Gunter had begun to despair of
+ever enjoying the fruits of Mr. Wiggins'
+generous intentions, when, fortunately for
+him, on the 14th March, 1914, Mrs.
+Wiggins got a fish bone lodged in her
+gullet and died two hours later.
+</p>
+
+<p>
+The Accounts had been prepared
+regularly on the 21st September each
+year, the anniversary of Mr. Wiggins'
+death, and the following is the Balance
+Sheet, dated 21st September, 1913:&mdash;
+</p>
+
+<div class='center'>
+<table>
+<thead>
+<tr><td colspan='8' class='c'>EBENEZER WIGGINS Decd.</td></tr>
+<tr>
+  <td><i>Dr.</i></td>
+  <td colspan='4' class='c'>Balance Sheet, 21st September, 1913.</td>
+  <td colspan='3' class='c'><i>Cr.</i></td>
+</tr>
+</thead>
+<tr>
+  <td style='width:15em;'>&nbsp;</td>
+	<td class='c' style='width:3em;'>&pound;</td>
+	<td class='r' style='width:1em;'>s.</td>
+	<td class='rb' style='width:1em;'>d.</td>
+  <td style='width:22em;'>&nbsp;</td>
+	<td class='c' style='width:3em;'>&pound;</td>
+	<td class='r' style='width:1em;'>s.</td>
+	<td class='r' style='width:1em;'>d.</td>
+</tr>
+<tr>
+  <td>To Estate Account</td>
+	<td class='r'>33,900</td>
+	<td class='r'>0</td>
+	<td class='rb'>0</td>
+  <td>By Investments:</td>
+	<td></td><td></td><td></td>
+</tr>
+<tr>
+  <td>To Income Account</td>
+	<td class='r'>125</td>
+	<td class='r'>0</td>
+	<td class='rb'>0</td>
+  <td>India 3 per Cent.: &pound;25,000 at 72</td>
+	<td class='r'>18,000</td>
+	<td class='r'>0</td>
+	<td class='r'>0</td>
+</tr>
+<tr>
+  <td colspan='3'>&nbsp;</td><td class='rb'>&nbsp;</td>
+  <td>Chili 4 per Cent.: &pound;5,000 at 90</td>
+	<td class='r'>4,500</td>
+	<td class='r'>0</td>
+	<td class='r'>0</td>
+</tr>
+<tr>
+  <td colspan='3'>&nbsp;</td><td class='rb'>&nbsp;</td>
+  <td>London United Tramways: &pound;10,000 4 per Cent. Debentures at 70</td>
+	<td class='r'>7,000</td>
+	<td class='r'>0</td>
+	<td class='r'>0</td>
+</tr>
+<tr>
+  <td colspan='3'>&nbsp;</td><td class='rb'>&nbsp;</td>
+  <td>West African Trading Co., Ltd.: 1,000 Shares &pound;1 each fully paid</td>
+	<td class='r'>1,000</td>
+	<td class='r'>0</td>
+	<td class='r'>0</td>
+</tr>
+<tr>
+  <td colspan='3'>&nbsp;</td><td class='rb'>&nbsp;</td>
+  <td>Freehold House</td>
+	<td class='r'>2,600</td>
+	<td class='r'>0</td>
+	<td class='r'>0</td>
+</tr>
+<tr>
+  <td colspan='3'>&nbsp;</td><td class='rb'>&nbsp;</td>
+  <td>Furniture and Effects</td>
+	<td class='r'>800</td>
+	<td class='r'>0</td>
+	<td class='r'>0</td>
+</tr>
+<tr>
+  <td colspan='3'>&nbsp;</td><td class='rb'>&nbsp;</td>
+  <td>Cash at Bank </td>
+	<td class='r'>125</td>
+	<td class='r'>0</td>
+	<td class='r'>0</td>
+</tr>
+<tr>
+  <td>&nbsp;</td><td colspan='3' class='rb'><hr style='width:6em' /></td>
+  <td>&nbsp;</td><td colspan='3' class='r'><hr style='width:6em' /></td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+	<td class='r'>34,025</td>
+	<td class='r'>0</td>
+	<td class='rb'>0</td>
+  <td>&nbsp;</td>
+	<td class='r'>34,025</td>
+	<td class='r'>0</td>
+	<td class='r'>0</td>
+</tr>
+</table>
+</div>
+
+<p>
+Mr. Gunter requires Accounts to be
+prepared, showing the position of affairs
+at the 14th July, 1914, and volunteers
+the following information:&mdash;
+</p>
+
+
+<div class="blockquote" style='text-indent:-1.5em;'>
+<p>
+(1) The Investments remain unaltered,
+with the exception of the India 3%
+Stock, which was sold on the
+10th January, 1914, and the proceeds,
+viz., &pound;18,500, were invested in
+a Mortgage at 5% Interest payable
+half-yearly on the 10th July and
+10th January each year.
+</p>
+
+<p>
+(2) The Coupons on the Chili 4%
+Bonds are payable on the 1st April
+and 1st October, and the Interest
+on the London United Tramway
+Debenture Stock on the 1st January
+and 1st July in each year.
+</p>
+
+<p>
+(3) On 3rd July, 1914, a Final Dividend
+at the rate of 15% per annum,
+free of Tax, was declared by the
+West African Trading Company,
+Ltd., and paid on the 8th July,
+1914, making, with the interim
+dividend paid on the 10th January,
+1914, 10% for the year ended 30th
+June, 1914, free of tax.
+</p>
+
+<p>
+(4) The Freehold House was let on a
+full repairing lease at an annual
+rental of &pound;146, the assessment was
+also &pound;146. The rent is payable
+quarterly on the usual quarter days.
+</p>
+
+<p>
+(5) The Trustees had paid to the late
+Mrs. Wiggins &pound;75 on account of
+income on the 12th day of each
+month, including March, 1914.
+</p>
+
+<p>
+(6) The Professional Accountant's fee
+for writing up the books from the
+22nd September, 1913, to 14th July,
+1914, and making the necessary
+adjustments was agreed at 100
+guineas, and this fee was to be
+apportioned between Mr. Gunter
+and the Estate of Mrs. Wiggins
+deceased equally.
+</p>
+</div>
+
+<p>
+Write up the Accounts for the period,
+making the necessary adjustments, and
+prepare Balance Sheet dated 14th July,
+1914, showing the amount due.
+</p>
+
+
+<div class='center'>
+<img src='images/footer-vine.png' title='decorative footer' alt='decorative footer' />
+</div>
+<hr class='major' />
+<div class='center'>
+<img src='images/header-vine.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+<h2>
+PROBLEM No. 17.
+</h2>
+
+
+<p>
+Mr. Montagu Summers
+had a conscientious objection to
+the Income Tax, and a positive
+loathing of the Super-Tax, and the trouble
+lay in the fact that he had amassed a considerable
+fortune in the City of London.
+</p>
+
+<p>
+Something had to be done, however,
+to relieve Mr. Summers of a portion of
+this scandalous taxation, and so, converting
+as much of his property into cash as he
+could spare, he invested the same in
+various ways in other countries.
+</p>
+
+<p>
+He bought Russian 4<span class='numer'>1</span>&frasl;<span class='denom'>2</span>% Bonds in
+Holland of the nominal value of 200,000
+Guilders, and a Freehold Farm near
+Amsterdam, which cost in English money
+about &pound;8,000.
+</p>
+
+<p>
+He bought Freehold Land in Canada,
+for which he paid &pound;80,000, and deposited
+with the Calgary Investment &amp;Security
+Trust $300,000 at 5%.
+</p>
+
+<p>
+He lent on Mortgage in New Zealand
+&pound;40,000, and he had a balance of
+Fcs. 8,600 to his credit at the Swiss
+Bankverein, Berne.
+</p>
+<div class='center'>
+ <a href='images/hrfig073.png'> <img src='images/fig073.png'
+    title='"Mr. Montagu Summers had a con...' alt='"Mr. Montagu Summers had a con...'
+  /></a>
+<p class='caption'>"Mr. Montagu Summers had a conscientious objection to the
+Income Tax, and a positive loathing of the Super-Tax."</p>
+</div>
+
+<p>
+On the 14th November, 1913, Mr.
+Summers died of blood poisoning, the
+result of cutting a corn with a blunt razor.
+</p>
+
+<p>
+His property in England consisted of
+his Furniture and Effects valued at &pound;3,800,
+Cash balance at the London, City &amp;Midland Bank, Queen Victoria Street,
+&pound;300, and his interest as a Partner in the
+firm of Montagu Summers &amp;Nephew,
+which was agreed at &pound;32,640.
+</p>
+
+<p>
+The Russian Bonds were sold on the
+Amsterdam Exchange for 180,000 Guilders,
+the Farm was valued at 112,800 Guilders,
+and the Land in Canada was estimated
+for duty purposes at $122,000.
+</p>
+
+<p>
+Assuming the Death Duties in Holland
+to be 5%, in Switzerland nil, and the
+rates in the Colonies to be similar to what
+they are in this Country, show what
+Estate Duty would be payable in England.
+</p>
+
+<p>
+The rates of Exchange can be taken as follows:&mdash;
+</p>
+<p style='margin-left:4em; text-indent:0;'>
+Holland&mdash;12 Guilders = &pound;1<br />
+Switzerland&mdash;25 Francs = &pound;1<br />
+Canada&mdash; 5 Dollars = &pound;1
+</p>
+<p>
+All accruing income to be ignored.
+</p>
+
+
+<div class='center'>
+<img src='images/footer-vine.png' title='decorative footer' alt='decorative footer' />
+</div>
+<hr class='major' />
+<div class='center'>
+<img src='images/header-pot.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+<h2>
+PROBLEM No. 18.
+</h2>
+
+
+<p>
+Mr. Harold Wimpole died
+in his Opera Hat, and was
+buried in Willesden Cemetery.
+</p>
+
+<p>
+His Will had been proved, Estate Duty
+had been paid, and the Widow, who was
+the sole Beneficiary, had found considerable
+consolation in the &pound;56,200 which had come
+to her.
+</p>
+
+<p>
+This &pound;56,200 represented the Gross
+Estate, less Debts due by Mr. Wimpole
+at his death &pound;1,416, Funeral Expenses
+&pound;39 17s. 0d. which were regarded by all,
+including the Inland Revenue Authorities,
+as most reasonable, Estate Duty, Interest
+on Estate Duty &pound;31 16s. 0d., Testamentary
+Expenses &pound;140 3s. 0d. and Legacy Duty.
+</p>
+<div class='center'>
+ <a href='images/hrfig077.png'> <img src='images/fig077.png'
+    title='"The Curate looked at the Wido...' alt='"The Curate looked at the Wido...'
+  /></a>
+<p class='caption'>"The Curate looked at the Widow,
+and the Widow looked at the Curate."</p>
+</div>
+
+<p>
+Eight months had passed away and the
+rules of Society permitted Mrs. Wimpole
+to smile occasionally; the Curate, who
+took an extraordinary interest in Mrs.
+Wimpole's salvation and the carving of
+an ancient Japanese Cabinet, had called
+for tea. The Reverend gentleman, with
+a sandwich in his hand, was recording the
+incidents connected with the birth of
+Buddha, when his fingers happened to
+touch the spring of a secret drawer in
+the aforementioned Cabinet.
+</p>
+
+<p>
+The Curate looked at the Widow, and
+the Widow looked at the Curate, and
+there they stood together, hand in hand,
+like two young children, in silent amazement,
+for the secret drawer in the Japanese
+Cabinet disclosed 25 4<span class='numer'>1</span>&frasl;<span class='denom'>2</span>% Foreign Government
+Bonds to Bearer, of the nominal
+value of &pound;500 each, and several memoranda
+of Stock Exchange dealings between Mr.
+Wimpole and his Broker. The coupons
+were payable on the 10th March, and the
+10th September in each year, and the
+last coupon which had been cut off was
+dated 10th September, 1912, exactly 8
+months previous to the death of Mr.
+Wimpole. Mrs. Wimpole consulted the
+Reverend Oscar Veritas long and earnestly
+over the matter, and the Reverend Oscar
+admitted that it was a case necessitating
+very great firmness of character and
+honesty of purpose. Ultimately, however,
+he arrived at the conclusion that
+Mrs. Wimpole would be unworthy
+to bear his name in the future, unless
+she did her duty in the present instance.
+</p>
+
+<p>
+What was the pecuniary value of the
+good man's conclusions to the Inland
+Revenue in the matter of Estate and
+Legacy Duty, bearing in mind the fact
+that the Bonds stood at 92 on the day of
+Mr. Wimpole's death, and 90, ten months
+later when Mrs. Wimpole's Solicitor finally
+settled the matter?
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+<i>Note.</i>&mdash;The Honeymoon was spent in Japan.
+</p>
+
+<hr class='major' />
+<div class='center'>
+<img src='images/header-vine.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+<h2>
+PROBLEM No. 19.
+</h2>
+
+
+<p>
+Sir Robert Rushforth, J.P.,
+was a big man with a big heart and
+a wooden leg. He had inherited
+a fortune, gone bankrupt, and married a
+Widow, and if anyone had told him he
+wasn't a sportsman he would have
+called that individual a liar, and opened
+a second bottle.
+</p>
+
+<p>
+He died on the 4th June, leaving all
+his property to his Widow, with the
+exception of his wooden leg, which he
+directed to be handed over to the Royal
+Hospital for Incurables, at Putney.
+</p>
+
+<p>
+Such was the man, and the contents of
+his Will so exactly reflected the character
+of her husband that Lady Rushforth at
+once had recourse to the smelling salts
+on reading the document.
+</p>
+
+<p>
+He directed the debts, from which he
+had obtained a legal discharge in Bankruptcy,
+to be paid in full, he forgave all
+his Debtors, and instructed his Widow,
+whom he had appointed sole Executrix
+and Residuary Legatee, to meet in full
+all his Gaming Debts. He further
+directed that a certain debt, in respect
+of which he had pleaded in his younger
+days the Statutes of Limitation, should be
+paid in full.
+</p>
+
+<p>
+The name of this latter creditor was
+Gunter, and the debt, amounting to &pound;25,
+was in respect of repairs to certain pigsties.
+</p>
+
+<p>
+The discharge from Bankruptcy had
+been obtained by Sir Robert eight years
+previous to his death. His liabilities had
+amounted to &pound;16,200, and he had paid
+2s. 6d. in the &pound;.
+</p>
+
+<p>
+He owed his bookmaker, Mr. Hollins,
+of Houndsditch, &pound;200.
+</p>
+
+<p>
+He had lent his Vicar, the Rev. Aaron
+Cranium, &pound;100, his sister Blanche &pound;300,
+and his intimate but impecunious friend,
+Mr. Algernon O'Gizzard, &pound;50. This latter
+loan was rendered necessary by reason
+of the fact that Mr. O'Gizzard had stood
+bail for a friend who had got into trouble
+with the police, and who failed to put
+in an appearance before the Magistrates
+on the day appointed. Now, Sir Robert
+happened to be on the Bench that morning,
+and ordered the bail to be estreated
+before he realised with whom he was dealing.
+</p>
+
+<p>
+Apart from the above property Sir
+Robert left Personal Estate valued at
+&pound;62,000. There was no Real Property.
+</p>
+
+<p>
+Show what Estate Duty and Legacy
+Duty were payable upon Sir Robert's
+death.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+
+<div class="blockquote">
+<p>
+<i>Note.</i>&mdash;The wooden leg was returned by
+the Secretary of the Royal
+Hospital for Incurables at Putney,
+and being found to be of no
+intrinsic value was eventually
+deposited in the family
+Mausoleum at Norwood.
+</p>
+</div>
+<div class='center'>
+<img src='images/footer-vine.png' title='decorative footer' alt='decorative footer' />
+</div>
+
+<hr class='major' />
+<div class='center'>
+<img src='images/header-pot.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+<h2>
+PROBLEM No. 20.
+</h2>
+
+
+<p>
+Mr. James Hotchkiss died
+in the autumn of age on the
+morning of his 93rd birthday.
+</p>
+
+<p>
+During his protracted life he had
+always surrounded himself with every
+comfort, and was reputed to be an
+exceedingly rich man.
+</p>
+
+<p>
+No wonder then that his death should
+occasion an unparalleled outburst of grief
+and hatbands on the part of his weeping
+relatives.
+</p>
+
+<p>
+After the funeral, the chief mourners
+met in the library and the Family Solicitor,
+with a glass of wine within easy reach,
+read out the last Will and Testament of
+James Hotchkiss Deceased.
+</p>
+
+<p>
+This interesting document brought a
+ray of comfort to bleeding hearts, for
+several substantial Legacies were mentioned,
+all free of duty, and two at
+least of the prospective Legatees were
+observed to make rapid calculations on
+the left shirt cuff.
+</p>
+<div class='center'>
+ <a href='images/hrfig086.png'> <img src='images/fig086.png'
+    title='"To Rachel and Joyce Proudfoot...' alt='"To Rachel and Joyce Proudfoot...'
+  /></a>
+<p class='caption'>"To Rachel and Joyce Proudfoot (my sister's little
+girls, aged 32 and 27 respectively), &pound;10,000 each."
+</p>
+
+<p class='caption'>
+Joyce: "Think of it, Rachel!! Ten thousand pounds!!!
+Why the young fellows will simply chase us!!!"</p>
+</div>
+
+<p>
+To Sophia Hotchkiss ("my own dear
+Wife") the deceased left his Horses,
+Carriages, Motor Car, Household Furniture,
+Pictures, including the Landscape
+by Earp, Linen, Plate, Glass, &amp;c.,
+absolutely.
+</p>
+
+<p>
+To George Proudfoot ("my dear sister's
+only son") the deceased left his Horn&egrave;d
+Cattle, <i>i.e.</i>, Cows, and &pound;20,000.
+</p>
+
+<p>
+To Rachel and Joyce Proudfoot ("my
+sister's little girls"), the deceased bequeathed
+&pound;10,000 each. The Misses
+Proudfeet were aged 32 and 27
+respectively.
+</p>
+
+<p>
+To Richard, William and Algernon
+Hotchkiss ("my never-to-be-forgotten
+brother's sons") the deceased left &pound;20,000
+each, and to John Willett ("my faithful
+valet"), &pound;2,000.
+</p>
+
+<p>
+The Residue of the Estate was bequeathed
+absolutely to the Widow.
+</p>
+
+<p>
+The Executors lost no time in having
+the Property valued and the debts due
+by the deceased at his death, ascertained,
+and their efforts disclosed "a very lamentable
+state of affairs," at least, such was
+the opinion expressed by the Reverend
+Stephen Collins who had called to comfort
+the Widow in her affliction.
+</p>
+
+<p>
+The Horses, Carriages, Motor Car, &amp;c.,
+including the Landscape by Earp, were
+valued at &pound;2,000; the Horn&egrave;d Cattle, <i>i.e.</i>,
+the Cows, were put down at &pound;400, and
+the rest of the Property at &pound;40,893 16s 0d.
+</p>
+
+<p>
+The Debts due by the deceased amounted
+to &pound;1,720 0s. 0d., and the Funeral Expenses
+to &pound;339 7s. 0d. These latter were
+considered unreasonable by the Inland
+Revenue Authorities, and in spite of
+several very eloquent appeals addressed
+to them by the Executors, including a
+touching letter from the Reverend Stephen
+Collins dealing with the blameless life of
+the deceased, the amount allowed was
+fixed at &pound;33 16s. 0d.
+</p>
+
+<p>
+The Testamentary Expenses, exclusive
+of Estate Duty, amounted to &pound;186 13s. 0d.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+What amount was eventually received
+by each Legatee?
+</p>
+
+<div class='center'>
+<img src='images/footer-vine.png' title='decorative footer' alt='decorative footer' />
+</div>
+<div class='center'>
+ <a href='images/hrfig090.png'> <img src='images/fig090.png'
+    title='"At the age of 16 he made the ...' alt='"At the age of 16 he made the ...'
+  /></a>
+<p class='caption'>"At the age of 16 he made the acquaintance of
+Miss Harriett Hopkins. In the following spring he
+had successfully reached the 'Walking-out' stage."</p>
+</div>
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-vine.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+
+
+<h2>
+PROBLEM No. 21.
+</h2>
+
+
+<p>
+Mr. and Mrs. Turvey were
+justly proud of their son
+"'Erbert." He was their only
+child, and always wore a Frock Coat,
+Brown Boots and White Spats on Sunday.
+In fact, as everyone said, he gave a tone
+to Bethnal Green.
+</p>
+
+<p>
+But the ways of Providence are strange,
+and it is futile to seek for explanations
+where none are vouchsafed. It is enough
+to say that Mr. Herbert's anatomy came
+into violent contact with a brewer's dray
+one Thursday afternoon, and that a
+promising young life was cut short at the
+early age of 19.
+</p>
+
+<p>
+His Life Story has yet to be written,
+and it is but the barest outline that can
+be here recorded.
+</p>
+
+<p>
+At the age of 16 he made the acquaintance
+of Miss Harriett Hopkins. In the
+following spring he had successfully
+reached the "walking out" stage. He
+was formally engaged at the age of 17
+and at 18 he was married. Six weeks
+before he died he made two very
+remunerative investments. He borrowed
+from his Employers&mdash;without worrying
+them about so small a matter&mdash;the sum
+of &pound;6, which he converted into &pound;600 by
+successfully backing "Hump Back" at
+100 to 1 for the "Cesarewitch." He also
+insured his life for &pound;100.
+</p>
+
+<p>
+Having satisfactorily adjusted the small
+matter of the Loan without in any way
+arousing his Employers' suspicions, he
+joined a Burial Club, made a Will, and
+died ten days later.
+</p>
+
+<p>
+By his Will he appointed his Widow
+sole Executrix, and divided his Estate as
+to one-fourth part to his father Oliver
+Turvey, as to one-sixth part to a former
+landlady Mrs. Korphdrop, and the residue
+to his Widow.
+</p>
+
+<p>
+The Estate consisted of the following:&mdash;
+</p>
+
+
+<div class='blockquote'>
+<p>Cash &pound;564.</p>
+
+<p>Insurance Policy, &pound;100.</p>
+
+<p>Burial Club Money &pound;14.</p>
+
+<p>Household Furniture and Effects &pound;12.</p>
+</div>
+
+<p>
+The Funeral Expenses amounted to &pound;12.
+</p>
+
+<p>
+Mr. Herbert Turvey was buried on
+the third Thursday after Guy Fawkes'
+Day, and on the following Tuesday
+fortnight the Widow gave birth to a
+son. Both mother and child progressed
+amazingly and everybody called to visit
+Harriett, but chiefly to satisfy their
+curiosity as to the amount which she inherited.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+Don't keep them waiting.
+</p>
+
+<div class='center'>
+<img src='images/footer-vine.png' title='decorative footer' alt='decorative footer' />
+</div>
+
+<hr class='major' />
+<div class='center'>
+<img src='images/header-pot.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+<h2>
+PROBLEM No. 22.
+</h2>
+
+
+<p>
+Mrs. George Dumpkins
+was very vexed that any Estate
+Duty at all should be payable,
+and when she was told that a Corrective
+Affidavit would have to be presented she
+threatened to change her Solicitors. As
+she very properly said she had sufficient
+troubles already without having to pay
+for more, and the Chancellor of the
+Exchequer, whoever he was, ought to be
+ashamed of himself for taxing Widows so
+scandalously.
+</p>
+
+<p>
+She entirely disagreed with the opinion
+of her Solicitor as to the necessity of
+presenting this Corrective Affidavit, and
+insisted upon having Counsel's opinion on
+the matter. The following facts were
+therefore submitted to the learned gentleman:&mdash;
+</p>
+
+<p>
+Mr. Dumpkins' Estate had been proved
+for Probate purposes at &pound;71,000, but
+during the year after death the following
+Assets were realised and Liabilities settled, viz.:&mdash;
+</p>
+
+
+<div class="blockquote" style='text-indent:-1.5em;'>
+<p>
+&pound;18,000 3<span class='numer'>1</span>&frasl;<span class='denom'>2</span>% India Stock valued for
+Probate at 94<span class='numer'>7</span>&frasl;<span class='denom'>8</span>, realised 91.
+</p>
+
+<p>
+Share in Ship valued at &pound;4,000,
+realised &pound;3,500.
+</p>
+
+<p>
+Sundry Liabilities estimated for Probate
+at &pound;8,000, were subsequently
+found to be &pound;8,700. (This included
+&pound;75 cost of bringing deceased's body
+from abroad.)
+</p>
+
+<p>
+Stock-in-Trade valued at &pound;10,250,
+realised &pound;9,400.
+</p>
+
+<p>
+&pound;6,000 Mortgage Debentures valued at
+&pound;7,500 were sold at par.
+</p>
+</div>
+
+<p>
+The opinion of Counsel was received in
+due course, and the Solicitor smiled.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+By what amount was the Estate Duty
+increased or decreased? Ignore any
+adjustment in respect of Interest on
+Estate Duty.
+</p>
+
+<div class='center'>
+<img src='images/footer-pot.png' title='decorative footer' alt='decorative footer' />
+</div>
+
+<hr class='major' />
+<div class='center'>
+<img src='images/header-vine.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+<h2>
+PROBLEM No. 23
+</h2>
+
+
+<p>
+Mr. William Wiggins made
+all his money out of Pickles,
+and when he died his body
+was embalmed. To use the Widow's
+words, "'e 'opped it" on the 14th June, 1914.
+</p>
+
+<p>
+He left his fortune to Mrs. Wiggins,
+his nephew Herbert Huggins (commonly
+known as 'Erb 'Uggins), and his cousin
+Joe Gubbins, in equal portions.
+</p>
+
+<p>
+The Will was duly proved, Estate Duty
+at 9% was paid, and the interest on the
+Estate Duty amounting to &pound;165 3s. 0d.
+was paid on the 14th November, 1914.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+What was the value of the Net Legacy
+received by each Beneficiary? There was
+no Real Estate.
+</p>
+<div class='center'>
+<img src='images/footer-pot.png' title='decorative footer' alt='decorative footer' />
+</div>
+<div class='center'>
+ <a href='images/hrfig098.png'> <img src='images/fig098.png'
+    title='"For nearly 25 years he had be...' alt='"For nearly 25 years he had be...'
+  /></a>
+<p class='caption'>"For nearly 25 years he had been
+a Judge of the Probate Division."</p>
+</div>
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-pot.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+<h2>
+PROBLEM No. 24.
+</h2>
+
+
+<p>
+Mr. Justice Oats died in
+harness. He worked like a
+horse throughout his long career
+on the Bench, and was universally regarded
+as a thoroughbred sportsman. For
+nearly 25 years he had been a Judge of
+the Probate Division of the High Court
+of Justice, and like many others in a
+similar position, died intestate. Not that
+this was the intention of the learned
+Judge, for he had prepared a Will on
+the back of an envelope, but forgetting
+that even he was subject to the laws of
+the land, had entirely overlooked the
+necessity for signing it. He died, therefore, intestate.
+</p>
+
+<p>
+His Net Estate, after the payment of
+the Estate Duty on the Personal Property,
+amounted to &pound;68,570, of which the Real
+Property was valued at &pound;24,200.
+</p>
+
+<p>
+For many years the Judge had been a
+Widower, and his only child had died in
+infancy. His youngest brother, Alfred,
+was living, however, and he had a nephew,
+the son of his deceased brother Charles.
+The Judge had, in addition, three first
+cousins, one of whom was a lady who
+had thrice refused offers of marriage, the
+acceptance of any one of which would
+have made her Lady Oats. She was,
+however, a Quakeress, and her enemies
+hinted that she refused the Judge lest
+the combination of the name of her
+religious faith and her marriage name
+should bring upon her the nickname of
+"Lady Porridge."
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+How was the Judge's property divided?
+</p>
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-vine.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+<h2>
+PROBLEM No. 25.
+</h2>
+
+
+<p>
+The following letter was received
+by the Rev. Stephen Collins on
+the 22nd March, 1914:&mdash;
+</p>
+
+
+<div class="blockquote">
+
+
+<div class="ralign">
+<p>
+147, Eaton Avenue, W.
+</p>
+
+<p>
+<i>21st March, 1914.</i>
+</p>
+</div>
+
+<p>
+My dear Mr. Collins,
+</p>
+
+<p>
+As an old and much honoured
+friend of my late husband may I implore
+you to be with us at breakfast on Tuesday,
+the 1st April, at 9 a.m.?
+</p>
+
+<p>
+My son Montgomery comes of age on
+that day and I feel that it would be
+a particularly appropriate occasion for
+his Vicar to say a few words on the
+seriousness of life, and the responsibilities
+of riches.
+</p>
+
+<p>
+Perhaps you do not know that my
+husband left everything to me except
+&pound;10,000 India 3<span class='numer'>1</span>&frasl;<span class='denom'>2</span>% Stock which he bequeathed
+(in my opinion misguidedly) to
+our two boys, Montgomery and Algernon,
+in equal shares. At the date of the
+Colonel's death, six years ago, these were
+valued at 102, but now, alas, are worth
+no more than 90. The Income up to the
+6th January last has been regularly handed
+over to the boys in accordance with their
+father's wishes, but on the 1st April, &pound;5,000
+of the Stock will have to be sold and
+handed over to Monty.
+</p>
+
+<p>
+Mr. Crawley, my Solicitor, has promised
+to be present, and I have sent invitations
+to my Stockbroker, Professional
+Accountant, and the Bank Manager.
+</p>
+
+<p>
+Do come, dear Mr. Collins,
+</p>
+
+
+<div class="ralign" style='margin-right:2em;'>
+<p>
+And believe me to remain,
+</p>
+</div>
+
+
+<div class="ralign" style='margin-right:4em;'>
+<p>
+Yours very sincerely,
+</p>
+</div>
+
+
+<div class="ralign" style='margin-right:8em;'>
+<p>
+AUGUSTA MAWSTONE.
+</p>
+</div>
+</div>
+
+
+<p>
+<i>Note.</i>&mdash;The breakfast was a great success.
+Everybody turned up and the Rev.
+Stephen Collins spoke for 47 minutes.
+The &pound;5,000 Stock was sold at 90 net,
+and the necessary entries were made
+in the books of the Trust, showing
+the settlement of Montgomery's
+interest in the Estate.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+What was it?
+</p>
+
+<div class='center'>
+<img src='images/footer-pot.png' title='decorative footer' alt='decorative footer' />
+</div>
+<div class='center'>
+ <a href='images/hrfig103.png'> <img src='images/fig103.png'
+    title='"The Rev. Stephen Collins spok...' alt='"The Rev. Stephen Collins spok...'
+  /></a>
+<p class='caption'>"The Rev. Stephen Collins spoke for 47 minutes."</p>
+</div>
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-pot.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+
+
+<h2>
+PROBLEM No. 26.
+</h2>
+
+
+<p>
+Sir John Hopper, Bart., died
+on the day set apart for the Feast
+of St. Valentine. He had been a
+Widower for some 12 years, and the age
+of his only daughter was 23.
+</p>
+
+<p>
+The Family consisted of four Sons and
+one Daughter, whose names in order of
+age were:&mdash;
+</p>
+
+<p style='text-indent:0;margin-left:5em;'>
+John Long,<br />
+George Rhode,<br />
+Oscar Truclod,<br />
+Charles Grarze,<br />
+Rose Marie.
+</p>
+
+<p>
+Sir John died intestate, possessed of the
+following Estate:&mdash;
+</p>
+
+
+<div class="blockquote">
+<p>
+Net Residue of Personalty, &pound;24,000.
+</p>
+
+<p>
+Real Property:
+</p>
+
+
+<div class="blockquote">
+<p>
+Freehold Estate 4 miles outside
+Canterbury, Kent, &pound;5,000. Delightful
+situation, 4 Reception
+Rooms, 8 Bed and Dressing
+Rooms, 2 Bathrooms, Modern
+Kitchen apartments, including
+Servants' Hall, usual Offices,
+Good Stabling and 4 Acres of
+Garden. Caretaker within.
+</p>
+
+<p>
+Freehold Estate, 1 mile outside
+Guildford, Surrey, &pound;8,000.
+</p>
+
+<p>
+Freehold Estate in the City of
+Nottingham, &pound;10,000.
+</p>
+</div>
+</div>
+<hr />
+
+<p>
+Show how the Estate of Sir John
+Hopper will be divided.
+</p>
+<div class='center'>
+<img src='images/footer-vine.png' title='decorative footer' alt='decorative footer' />
+</div>
+
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-vine.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+
+<h2>
+PROBLEM No. 27.
+</h2>
+
+
+<p>
+Colonel Filbert, stepson to
+the late Sir Hazel Knut, paid a
+brief visit to the Brazils, and
+died on the voyage home on the
+1st January, 1914.
+</p>
+
+<p>
+He left a considerable Estate, and bequeathed
+many useful Legacies, all free of
+Duty, to deserving Relations and Friends.
+One of the provisions in his Will was to
+the effect that a sum of &pound;5,300 should be
+placed on Deposit at the Bank to be paid
+over by instalments at regular intervals
+to his two Executors, John Bunting
+and Nathaniel Whittel, and was to be
+regarded by them as a Salary for their
+services.
+</p>
+
+<p>
+Each was to receive a Starting Salary
+at the rate of &pound;500 per annum, but whereas
+John Bunting's Salary was to be increased
+by &pound;100 per annum, Nathaniel Whittel's
+Salary was to be increased by &pound;25 half-yearly.
+</p>
+
+<p>
+As soon as the &pound;5,300 was exhausted
+the Salaries were to cease, and in the
+meanwhile the Interest on the Deposit
+was to be paid over to the General Estate.
+</p>
+
+<p>
+The Salaries were to be drawn half-yearly,
+the first to be payable exactly six
+months from the date of Colonel Filbert's death.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+Write up a Cash Account, showing how
+the Legacy of &pound;5,300 was divided between
+the Executors.
+</p>
+<div class='center'>
+<img src='images/footer-pot.png' title='decorative footer' alt='decorative footer' />
+</div><div class='center'>
+ <a href='images/hrfig110.png'> <img src='images/fig110.png'
+    title="Miss Tulip's heart was forthw..." alt="Miss Tulip's heart was forthw..."
+  /></a>
+<p class='caption'>"Miss Tulip's heart was forthwith pierced."</p>
+</div>
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-pot.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+<h2>
+PROBLEM No. 28.
+</h2>
+
+
+<p>
+Every Sportsman will admit that
+it is immoral to bet upon
+a certainty, and most business
+men will endorse the maxim that
+only fools speculate without inside information.
+</p>
+
+<p>
+Now Mr. Hunter never gambled, but
+he was open, like most other men, to a
+sound speculation, and when he learned
+in his capacity of Clerk to a well-known
+Solicitor that Miss Rose Tulip had inherited
+a fortune of &pound;60,000 odd, he naturally felt
+interested.
+</p>
+
+<p>
+Many obstacles separated Mr. Hunter
+from the object of his choice, but he
+persevered, and on one particularly sunny
+afternoon he let loose a chance arrow with
+such well-directed aim that Miss Tulip's
+heart was forthwith pierced.
+</p>
+
+<p>
+The Engagement caused some little
+flutter in the Dove Cot, and Lady
+Tulip, Miss Rose's widowed Mother, at
+once changed her Solicitors in spite of a
+promise on their part to decorate Mr.
+Hunter with the "Order of the Boot,"
+a promise which was promptly converted
+into an accomplished fact.
+</p>
+
+<p>
+Every effort was made to induce Miss
+Rose to reconsider her decision, but this
+only seemed to lead to further complications,
+for on the 14th July Mr. George
+Tulip announced his engagement to Mr.
+Hunter's only sister, Rebecca.
+</p>
+
+<p>
+This was the last straw and the lamentations
+of the proud Tulip Family were
+only exceeded by the rejoicings of the
+Family Hunter.
+</p>
+
+<p>
+The prospective Bridegrooms met and
+made all the necessary arrangements, and
+Mr. Hunter, who had had a legal training,
+drew up four simple Wills whereby each
+left to the Widow, or Widower, all the
+worldly goods of which he, or she, was
+possessed.
+</p>
+
+<p>
+These documents were signed and witnessed,
+and four days later the double
+wedding was solemnized quietly at the
+Church of Saint Augustine.
+</p>
+
+<p>
+After the ceremony Mr. and Mrs.
+Hunter and Mr. and Mrs. Tulip journeyed
+to Liverpool Street Station and caught
+the 2 o'clock train to Clacton, where the
+honeymoon was to be spent.
+</p>
+
+<p>
+They arrived comfortably in time for
+tea, and Mr. Hunter insisted on treating
+the whole party to Winkles.
+</p>
+
+<p>
+Now, whether it was the Winkles or
+whether it was the pins, is a matter upon
+which the two London Specialists who
+were called in failed to agree, but the
+fact remains that within a very short
+time of devouring the aforementioned
+delicacies, the whole party became alarmingly
+ill, and two days later Mr. Tulip
+and Mrs. Hunter died.
+</p>
+
+<p>
+Mr. Tulip's Estate, which consisted
+entirely of Personalty, was valued for
+Probate at &pound;8,420, and Mrs. Hunter's
+Estate, which consisted entirely of Realty,
+was valued at &pound;72,422.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+What Legacy and Succession Duty was
+payable on behalf of Mrs. Tulip, and by
+Mr. Hunter?
+</p>
+<div class='center'>
+<img src='images/footer-vine.png' title='decorative footer' alt='decorative footer' />
+</div>
+
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-vine.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+
+<h2>
+PROBLEM No. 29.
+</h2>
+
+
+<p>
+The Rev. Stephen Collins delivered
+a very moving address on Total
+Abstinence at the Mothers' Meeting
+on the 14th June, 1913, and three weeks
+later Mr. Gunter died.
+</p>
+
+<p>
+Now some of the parishioners were
+inclined to connect the two events,
+particularly as Mrs. Gunter happened
+to form one of the band of Mothers
+on that memorable occasion, and was
+known to have given her husband Toast
+and Water for Supper on the following
+evening.
+</p>
+
+<p>
+Be that as it may, it is an undoubted
+fact that Mr. Gunter, in a codicil to his
+Will, nominated the Rev. Stephen Collins
+in place of Mrs. Gunter as Life Tenant
+of the Income arising from the property
+of which he (Mr. Gunter) died possessed.
+</p>
+
+<p>
+After the payment of all Duties, Debts
+and Expenses, this property consisted of
+Assets producing Income as follows:&mdash;
+</p>
+
+
+<div class="blockquote" style='text-indent:-1.5em;'>
+<p>
+(1) &pound;300 per annum, free of tax,
+payable quarterly on the usual
+quarter days.
+</p>
+
+<p>
+(2) &pound;160 per annum, free of tax,
+payable half-yearly, on the 30th June
+and 31st December.
+</p>
+
+<p>
+(3) &pound;140 per annum, free of tax,
+payable yearly, on the 29th September.
+</p>
+</div>
+
+<p>
+The Income was received regularly on
+the due dates and the Reverend Gentleman
+had given a formal receipt for everything
+due up to and including the 31st December,
+1913.
+</p>
+
+<p>
+On the 30th April, 1914, Stock No. 1
+was sold cum. div. at a profit of &pound;500,
+and the proceeds were re-invested in a
+security, the income from which was
+&pound;320 per annum, free of tax, payable
+half-yearly on the 30th June and
+31st December.
+</p>
+
+<p>
+On the 20th June, 1914, Stock No. 2
+was sold ex. div. at a loss of &pound;100,
+and the proceeds were re-invested in a
+Stock ex. div. bringing in &pound;140 per annum,
+free of tax, payable quarterly on the usual
+quarter days.
+</p>
+
+<p>
+The Rev. Stephen Collins recognises
+that the Trustees are honourable men and
+that their intentions are worthy, but nevertheless
+he is anxious and wishes to be in
+a position to reassure Mrs. Collins as to
+the income which he will receive for the
+year ending 31st December, 1914.
+</p>
+
+<p>
+It is interesting to note that Mr. Collins
+has now published the Address delivered
+at the Mothers' Meeting on the 14th June,
+1913, trusting that the seed sown broadcast
+may find its way into fruitful soil.
+</p>
+
+<div class='center'>
+<img src='images/footer-pot.png' title='decorative footer' alt='decorative footer' />
+</div>
+
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-pot.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+<h2>
+PROBLEM No. 30.
+</h2>
+
+
+<p>
+A prosperous Solicitor usually
+occupies very dirty offices, and
+his furniture is mostly Mid-Victorian
+and rickety.
+</p>
+
+<p>
+Mr. John Storalore was no exception
+to this rule and never seemed to object
+to such surroundings, but on the contrary
+always appeared to be surrounded by
+such objects.
+</p>
+
+<p>
+He was sitting in his office one June
+afternoon and was dozing over some
+particularly dusty documents when his
+clerk announced Sir Pufferby Pawstone.
+Now Sir Pufferby was an important
+client who always had his hair cut and
+called on his Solicitor when he found himself
+with nothing better to do. It is not
+surprising, therefore, that Mr. Storalore
+should receive him with open arms and
+assume a very profound expression.
+</p>
+
+<p>
+After the usual courtesies had been exchanged,
+and Lady Pawstone's health
+touched upon, Sir Pufferby announced
+that he desired to make a Will.
+</p>
+
+<p>
+Mr. Storalore was all attention and
+took elaborate notes of Sir Pufferby's
+testamentary wishes, which were extensive
+and complicated. This done, Sir Pufferby
+begged Mr. Storalore to give him a brief
+and concise account of the steps which it
+is necessary for Executors and Trustees
+to take in the administration of the affairs
+of a deceased person from the moment of
+death up to the final distribution of the
+Residue.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+Do not worry about what Mr.
+Storalore actually said to Sir Pufferby,
+for Sir Pufferby was an old woman,
+and Mr. Storalore knew his client, but
+say what he would have said to you in
+answer to such a question.
+</p>
+<div class='center'>
+<img src='images/footer-vine.png' title='decorative footer' alt='decorative footer' />
+</div>
+
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-vine.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+
+
+<h2>
+PROBLEM No. 31.
+</h2>
+
+
+<p>
+Mr. George Huggins died
+on the 31st October, 1913, and
+with the exception of a few
+legacies, bequeathed free of duty, he left
+the whole of his property to his Widow
+for life with remainder over to his friend
+Mr. Giblets, provided that gentleman outlived
+Mrs. Huggins.
+</p>
+
+<p>
+Now this arrangement placed Mr.
+Giblets in an embarrassing predicament,
+especially as Mrs. Huggins' health improved
+so wonderfully after her husband's death.
+</p>
+
+<p>
+It appeared to Mr. Giblets, therefore,
+that matrimony was the only safe solution
+of the difficulty, and so he went on his
+knees before the Widow. But the lady
+grasped the situation immediately, and
+declined the honour.
+</p>
+
+<p>
+Friendship being thus early at an end
+Mr. Giblets resolved to worry the Widow,
+bearing in mind the saying that "Worry
+kills." So he set himself to quibble
+about every detail in the administration
+of the late Mr. Huggins' Estate,
+particularly as regards the apportionment
+of Revenue between Capital and Income.
+But the Widow would not worry, and
+wisely suggested to the Solicitors that all
+matters involving accounts should be left
+to some first-class Firm of Professional
+Accountants to settle.
+</p>
+
+<p>
+This was done, and the following are
+the Cash Receipts and Payments made
+by the Trustees up to the 30th June,
+1914.
+</p>
+<div style='margin:auto 1em;'>
+<table>
+  <tr>
+    <td style="width:3em;">&nbsp;</td>
+    <td class="r" style="width:2em;">&nbsp;</td>
+    <td><i>Receipts.</i></td>
+    <td class="r" style="width:5em;"></td>
+    <td class="r" style="width:2em;"></td>
+    <td class="r" style="width:2em;"></td>
+  </tr>
+  <tr>
+    <td>1913.</td>
+    <td class="r">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="r">&pound;</td>
+    <td class="r">s.</td>
+    <td class="r">d.</td>
+  </tr>
+  <tr>
+    <td>Oct.</td>
+    <td class="r">3</td>
+    <td>Cash at Bank and in house</td>
+    <td class="r">532</td>
+    <td class="r">17</td>
+    <td class="r">4</td>
+  </tr>
+  <tr>
+    <td>Nov.</td>
+    <td class="r">5</td>
+    <td>Yorkshire Coal Co., dividends half-year ending 30th September, 1913, free of tax</td>
+    <td class="r">&nbsp; 15</td>
+    <td class="r">&nbsp; 0</td>
+    <td class="r">&nbsp; 0</td>
+  </tr>
+  <tr>
+    <td>1914.</td>
+    <td class="r"></td>
+    <td></td>
+    <td class="r"></td>
+    <td class="r"></td>
+    <td class="r"></td>
+  </tr>
+  <tr>
+    <td>Jan.</td>
+    <td class="r">5</td>
+    <td>Dividends on India Stock, less tax</td>
+    <td class="r">47</td>
+    <td class="r">1</td>
+    <td class="r">8</td>
+  </tr>
+  <tr>
+    <td>" "</td>
+    <td class="r">14</td>
+    <td>Sale of Investments</td>
+    <td class="r">1,764</td>
+    <td class="r">8</td>
+    <td class="r">9</td>
+  </tr>
+  <tr>
+    <td>Feb. &nbsp;</td>
+    <td class="r">8 &nbsp;</td>
+    <td>Caledonian Railway Dividends, half-year ending 31st December, 1913</td>
+    <td class="r">32</td>
+    <td class="r">19</td>
+    <td class="r">2</td>
+  </tr>
+  <tr>
+    <td>March</td>
+    <td class="r">3</td>
+    <td>Sale of Furniture</td>
+    <td class="r">243</td>
+    <td class="r">6</td>
+    <td class="r">8</td>
+  </tr>
+  <tr>
+    <td>" " &nbsp;</td>
+    <td class="r">25</td>
+    <td>Quarter's Rent of Property to date, less tax at 1s. 2d.</td>
+    <td class="r">16</td>
+    <td class="r">1</td>
+    <td class="r">10</td>
+  </tr>
+  <tr>
+    <td>" " &nbsp;</td>
+    <td class="r">31</td>
+    <td>North British Investment Trust Dividends, 6 months to date, free of Tax</td>
+    <td class="r">70</td>
+    <td class="r">0</td>
+    <td class="r">0</td>
+  </tr>
+  <tr>
+    <td>" " &nbsp;</td>
+    <td class="r">31</td>
+    <td>West Ham Gas Co., half-year's Debenture Interest, less tax</td>
+    <td class="r">47</td>
+    <td class="r">1</td>
+    <td class="r">8</td>
+  </tr>
+  <tr>
+    <td>Apr.</td>
+    <td class="r">5</td>
+    <td>Dividends on India Stock, less tax</td>
+    <td class="r">47</td>
+    <td class="r">1</td>
+    <td class="r">8</td>
+  </tr>
+  <tr>
+    <td>June</td>
+    <td class="r">15</td>
+    <td>Sale of Jewellery</td>
+    <td class="r">32</td>
+    <td class="r">5</td>
+    <td class="r">0</td>
+  </tr>
+  <tr>
+    <td>" "</td>
+    <td class="r">25</td>
+    <td>Quarter's Rent of Property</td>
+    <td class="r">20</td>
+    <td class="r">0</td>
+    <td class="r">0</td>
+  </tr>
+  <tr>
+    <td style="width:3em;">&nbsp;</td>
+    <td class="r" style="width:2em;">&nbsp;</td>
+    <td><i>Payments.</i></td>
+    <td class="r" style="width:5em;"></td>
+    <td class="r" style="width:2em;"></td>
+    <td class="r" style="width:2em;"></td>
+  </tr>
+  <tr>
+    <td>Nov.</td>
+    <td class="r">7</td>
+    <td>Medical Attendance and Nursing fees</td>
+    <td class="r">31</td>
+    <td class="r">10</td>
+    <td class="r">0</td>
+  </tr>
+  <tr>
+    <td>" "</td>
+    <td class="r">25</td>
+    <td>Mrs. Huggins, on account</td>
+    <td class="r">50</td>
+    <td class="r">0</td>
+    <td class="r">0</td>
+  </tr>
+  <tr>
+    <td>Dec.</td>
+    <td class="r">31</td>
+    <td>Estate Duty</td>
+    <td class="r">532</td>
+    <td class="r">6</td>
+    <td class="r">8</td>
+  </tr>
+  <tr>
+    <td>" "</td>
+    <td class="r">31</td>
+    <td>Interest thereon</td>
+    <td class="r">2</td>
+    <td class="r">13</td>
+    <td class="r">3</td>
+  </tr>
+  <tr>
+    <td>1914.</td>
+    <td class="r"></td>
+    <td></td>
+    <td class="r"></td>
+    <td class="r"></td>
+    <td class="r"></td>
+  </tr>
+  <tr>
+    <td>Jan.</td>
+    <td class="r">16</td>
+    <td>Valuation fees</td>
+    <td class="r">15</td>
+    <td class="r">15</td>
+    <td class="r">0</td>
+  </tr>
+  <tr>
+    <td>Feb.</td>
+    <td class="r">1</td>
+    <td>Widow, further on account</td>
+    <td class="r">50</td>
+    <td class="r">0</td>
+    <td class="r">0</td>
+  </tr>
+  <tr>
+    <td>" "</td>
+    <td class="r">16</td>
+    <td>Funeral Expenses</td>
+    <td class="r">31</td>
+    <td class="r">10</td>
+    <td class="r">0</td>
+  </tr>
+  <tr>
+    <td>March</td>
+    <td class="r">25</td>
+    <td>Half-year's Ground Rent, due this day, less tax</td>
+    <td class="r">4</td>
+    <td class="r">18</td>
+    <td class="r">11</td>
+  </tr>
+  <tr>
+    <td>" "</td>
+    <td class="r">31</td>
+    <td>Debts due at death</td>
+    <td class="r">73</td>
+    <td class="r">6</td>
+    <td class="r">8</td>
+  </tr>
+  <tr>
+    <td>Apr.</td>
+    <td class="r">1</td>
+    <td>Widow, further on account</td>
+    <td class="r">50</td>
+    <td class="r">0</td>
+    <td class="r">0</td>
+  </tr>
+  <tr>
+    <td>" "</td>
+    <td class="r">30</td>
+    <td>Legacies</td>
+    <td class="r">250</td>
+    <td class="r">0</td>
+    <td class="r">0</td>
+  </tr>
+  <tr>
+    <td>May</td>
+    <td class="r">3</td>
+    <td>Duty thereon</td>
+    <td class="r">20</td>
+    <td class="r">0</td>
+    <td class="r">0</td>
+  </tr>
+  <tr>
+    <td>" "</td>
+    <td class="r">31</td>
+    <td>Executorship Expenses</td>
+    <td class="r">5</td>
+    <td class="r">6</td>
+    <td class="r">8</td>
+  </tr>
+  <tr>
+    <td>June</td>
+    <td class="r">1</td>
+    <td>Solicitor's Costs re Probate</td>
+    <td class="r">32</td>
+    <td class="r">6</td>
+    <td class="r">8</td>
+  </tr>
+  <tr>
+    <td>" "</td>
+    <td class="r">15</td>
+    <td>Mason's Expenses, restoring, &amp;c, Tombstone</td>
+    <td class="r">15</td>
+    <td class="r">15</td>
+    <td class="r">0</td>
+  </tr>
+  <tr>
+    <td>" "</td>
+    <td class="r">30</td>
+    <td>Paid Widow Balance due to her.</td>
+    <td class="r"></td>
+    <td class="r"></td>
+    <td class="r"></td>
+  </tr>
+</table>
+</div>
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+What amount was paid to Mrs. Huggins
+on the 30th June, 1914?
+</p>
+<div class='center'>
+<img src='images/footer-vine.png' title='decorative footer' alt='decorative footer' />
+</div>
+
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-pot.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+
+<h2>
+PROBLEM No. 32.
+</h2>
+
+
+<p>
+Mr. Nathaniel Soworthy, a great
+breeder of prize pigs, had the
+misfortune to be knocked down
+one day by his favourite Berkshire Boar,
+and his head was cut open on the corner
+of the pig-sty. Notwithstanding the fact
+that Mr. Soworthy prided himself exceedingly
+on the extreme cleanliness of his
+pig-sties, where, as he was often heard to
+say, he would be quite ready to eat his
+own dinner, he discovered on that lamentable
+occasion what must have been the
+sole surviving microbe on the premises
+which, entering his circulation, set up
+blood poisoning with the result that
+he passed away a few days later, viz.,
+at 6 p.m. on the evening of the 31st
+January, 1914.
+</p>
+
+<p>
+Mr. Soworthy was a man of many
+hobbies, and in addition to his prize
+pigs he possessed a unique collection of
+silver salt-cellars reputed to be one of the
+finest in the country. This was valued
+for Probate at &pound;5,000, while the pigs were
+estimated to be worth &pound;2,500.
+</p>
+
+<p>
+In addition he died possessed of the
+following property:&mdash;
+</p>
+
+
+<div class="blockquote" style='text-indent:-1.5em;'>
+<p>
+&pound;5,000 India 3% quoted at 75<span class='numer'>3</span>&frasl;<span class='denom'>8</span>-<span class='numer'>7</span>&frasl;<span class='denom'>8</span>.
+</p>
+
+<p>
+10,000 Ordinary Shares of &pound;1 each in
+the Improved Pork Pie Factory,
+Ltd., valued at 25/- per share.
+</p>
+
+<p>
+&pound;4,000 Mortgage at 4<span class='numer'>1</span>&frasl;<span class='denom'>2</span>% on the farm
+known as "Little Watchem," interest
+payable 30th September and
+31st March, paid to 30th September, 1913.
+</p>
+
+<p>
+Cash in the house, &pound;15.
+</p>
+
+<p>
+Cash at the Bank &pound;355 on Current
+Account and &pound;2,000 on deposit at
+3%, interest payable 30th June and
+31st December.
+</p>
+
+<p>
+&pound;5,000 Policy in the Live Stock
+Breeders' Mutual Assurance Society,
+upon which the Bonus at the date
+of death amounted to &pound;190.
+</p>
+
+<p>
+Household <ins class='correction' title='Original: Gods'>Goods</ins>, Horses, and Motor
+Car, &pound;3,500.
+</p>
+
+<p>
+Implements of Husbandry, &pound;150.
+</p>
+
+<p>
+The Freehold Estate, comprising
+Mansion House, Park, and Home
+Farm known as "The Piggeries,"
+valued at &pound;15,000, subject to a
+Mortgage of &pound;10,000 at 4<span class='numer'>1</span>&frasl;<span class='denom'>2</span>%,
+interest payable 30th November and
+31st May, paid to 30th November, 1913.
+</p>
+
+<p>
+He was also life tenant of Real Property
+producing &pound;3,000 per annum,
+in respect of which there was income
+accrued due but not received prior
+to death amounting to &pound;900.
+</p>
+</div>
+
+<p>
+By his Will he left the following bequests:
+</p>
+
+
+<div class="blockquote" style='text-indent:-1.5em;'>
+<p>
+&pound;1,000 in trust to the President for the
+time being of the Royal Society for
+the Propagation and Improvement of
+Pigs, to be invested and the interest
+awarded annually in prizes for the
+best sucking pigs.
+</p>
+
+<p>
+&pound;100 to the Perennial Society of Whole
+Hoggers, of the local branch of
+which he was the esteemed and
+Honorary President; and
+</p>
+
+<p>
+His famous White Sow, known as
+the "Soworthy Sow," to his lifelong
+friend the celebrated judge
+of pigs, Mr. Anthony Golightly Wackenbath.
+</p>
+</div>
+
+<p>
+The prize pigs were directed to be sold
+and realised &pound;2,690. The collection of
+silver salt-cellars was bequeathed to the
+Victoria and Albert Museum on condition
+that it should be shown as a whole and
+named the Soworthy Collection. This
+bequest was accepted.
+</p>
+<div class='center'>
+ <a href='images/hrfig125.png'> <img src='images/fig125.png'
+    title='"His famous White Sow, known a...' alt='"His famous White Sow, known a...'
+  /></a>
+<p class='caption'>"His famous White Sow, known as the 'Soworthy Sow.'"</p>
+</div>
+
+<p>
+The debts due at death amounted to
+&pound;215, and the funeral expenses to &pound;45.
+</p>
+
+<p>
+Within a week of the funeral the famous
+Soworthy Sow died in giving birth to a fine
+litter of ten little pigs, two of which unfortunately
+pre-deceased their Mother. The
+result of this event had been awaited
+before sending the Sow to Mr. Wackenbath,
+who was thus deprived of this mark of
+the deceased gentleman's affection. The
+value of the Sow alive had been &pound;50,
+but dead she was not worth more than
+&pound;3 10s. 0d., while the litter, whose father
+was the same Berkshire Boar that had been
+the unwitting cause of Mr. Soworthy's
+death, were worth &pound;2 a-piece.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+Prepare the Estate Duty Account, the
+affidavit being brought in on the 31st
+March, 1914. Show the amount of duty
+and interest payable.
+</p>
+<div class='center'>
+<img src='images/footer-pot.png' title='decorative footer' alt='decorative footer' />
+</div>
+
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-vine.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+
+<h2>
+PROBLEM No. 33.
+</h2>
+
+
+<p>
+Referring to the preceding
+Problem, all bequests were left
+free of duty and the residue of the
+estate was left in equal shares to Mr.
+Soworthy's grand-daughter, his brother,
+and his adopted son.
+</p>
+
+<p>
+The India Stock was sold on the
+25th March, 1914, at 77; the Shares in
+the Improved Pork Pie Factory, Ltd.,
+realised 24/- per share net on the
+25th May, 1914, after receipt on the
+1st May of a Final Dividend of 1/- per
+Share paid in respect of the year ending
+31st March, 1914, an interim dividend of
+6d. per share having been received by
+Mr. Soworthy prior to his decease.
+</p>
+
+<p>
+The Mortgage on "Little Watchem"
+Farm was called in and paid off on the
+30th June, 1914, while "The Piggeries"
+was directed to be sold and realised
+&pound;14,500 after payment of all expenses,
+completion being made on 31st May.
+</p>
+
+<p>
+The household goods and implements of
+husbandry were sold at the same time and
+produced &pound;3,000 and &pound;120 respectively.
+</p>
+
+<p>
+The Policy money with bonus was
+received on February 25th and the proceeds
+of the sale of pigs on March 5th,
+while the income from the Real Estate
+was received on February 10th.
+</p>
+
+<p>
+Estate and Legacy Duties were paid on
+March 31st, and the debts, funeral expenses
+and legacies were also paid on
+the same date. Executorship expenses
+amounting to &pound;250 were paid on June 14th.
+</p>
+
+<p>
+On the last day of each month such
+portion of the cash balance as was available
+in round thousands was placed on deposit
+at 3%.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+Prepare Residuary Account as at
+June 30th, 1914, and state the duties
+payable on the Residue.
+</p>
+
+<div class='center'>
+<img src='images/footer-vine.png' title='decorative footer' alt='decorative footer' />
+</div>
+
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-pot.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+<h2>
+PROBLEM No. 34.
+</h2>
+
+
+<p>
+Referring to the two preceding
+Problems, prepare an Account to
+be rendered by the Executors to
+the Residuary Beneficiaries, showing the
+realisation and distribution of the Estate,
+the final payment to the Residuary Beneficiaries
+taking place on July 1st, 1914.
+</p>
+
+<div class='center'>
+<img src='images/footer-vine.png' title='decorative footer' alt='decorative footer' />
+</div>
+
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-vine.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+<h2>
+PROBLEM No. 35.
+</h2>
+
+
+<p>
+To anyone not in the secret, the
+conduct of Mr. Pipkin would appear
+inexplicable, for on March 3rd,
+1914, he very deliberately entered a
+Tobacconist's shop, ordered a threepenny
+cigar, and afterwards resigned
+his position as Assistant Book-keeper
+in Messrs. Macfarlane's Grocery Establishment.
+</p>
+
+<p>
+The secret, however, lay in the fact
+that Mrs. Pipkin had come into money,
+and Mr. Pipkin very naturally felt himself
+independent of other people and yearned
+for the ease and comfort appertaining to
+the position of a retired gentleman of means.
+</p>
+
+<p>
+Mrs. Pipkin's fortune consisted of a life
+interest in the Property left by Mr. Austen
+Friars, who died on the 28th February, 1914.
+</p>
+
+<p>
+This property was represented by the
+following assets:&mdash;
+</p>
+
+
+<div class="blockquote" style='text-indent:-1.5em;'>
+<p>
+&pound;2,000 3<span class='numer'>1</span>&frasl;<span class='denom'>2</span>% Hongkong Stock, interest
+payable half-yearly, on the 1st April
+and 1st October.
+</p>
+
+<p>
+200 Shares of &pound;5 each (&pound;2 10s. 0d. called
+up and paid) in the Commercial
+Banking Co., Ltd.
+</p>
+
+<p>
+Freehold House bringing in &pound;80 a year,
+payable quarterly, on the usual
+Quarter Days.  This house was
+assessed at &pound;67, and the Income
+Tax was paid by the Tenant on the
+5th January, 1914.
+</p>
+
+<p>
+750 &pound;1 Shares, fully paid, in the
+Perpetual Rays Co., Ltd.
+</p>
+</div>
+
+<p>
+April, 1914, was the very happiest
+month in Mr. Pipkin's whole life, and
+he spent most of his time smoking his
+pipe in his back garden, or improving
+his mind by contemplating the educative
+pictures of the local Cinema.
+</p>
+
+<p>
+The months of May and June, however,
+did not prove quite so pleasant, and
+by the middle of July Mr. Pipkin actually
+threatened Mrs. Pipkin that unless she
+kept the baby quiet he would look out
+for another job.
+</p>
+
+<p>
+And then August came round which
+proved to be the most miserable month
+of Mr. Pipkin's whole life, for Mrs.
+Pipkin was suddenly taken ill after consuming
+a liberal portion of Tinned Salmon.
+Never before did he realise how much he
+loved his Wife or what a blow to his heart
+her death would be. He never left her
+bedside and he spared no expense, but, in
+spite of all, Mrs. Pipkin passed away on
+the 19th August, 1914.
+</p>
+
+<p>
+It would be idle to attempt to depict
+Mr. Pipkin's feelings; it is enough to say
+that he became a poorer but a wiser man.
+</p>
+
+<p>
+On the 3rd April, 1914, a dividend for
+the year ending 31st January, 1914, at the
+rate of 7<span class='numer'>1</span>&frasl;<span class='denom'>2</span>% was declared on the 200 shares
+in the Commercial Banking Co., Ltd., and
+a similar dividend was declared on the
+4th April, 1915, in respect of the year
+ending 31st January, 1915.
+</p>
+
+<p>
+On the 19th August, 1914, a final dividend
+at the rate of 15% per annum, free
+of tax, was declared on the 750 Shares in
+the Perpetual Rays Co., Ltd., for the
+half year ending 30th June, 1914. An
+interim dividend had been received on
+the 31st January, 1914, in respect of the
+half year ending 31st December, 1913,
+at the rate of 10% per annum, free
+of tax.
+</p>
+
+<p>
+No interim dividend was paid during
+the Company's year ending 30th June,
+1915; but on the 31st July, 1915, a
+dividend at the rate of 10%, free of tax,
+was declared in respect of the year ending
+30th June, 1915.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+Show the exact amount payable to
+Mrs. Pipkin and her Estate in respect
+of her life interest under the Will of
+Mr. Austen Friars.
+</p>
+<div class='center'>
+<img src='images/footer-pot.png' title='decorative footer' alt='decorative footer' />
+</div>
+<div class='center'>
+   <a href='images/hrfig136.png'>
+      <img src='images/fig136.png'
+        title='"Two Sons, who, if the truth w...'
+        alt='"Two Sons, who, if the truth w...'
+     />
+   </a>
+<p class='caption'>"Two Sons, who, if the truth was told,
+Drank much more than they ought'er."</p>
+</div>
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-pot.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+
+<h2>
+PROBLEM No. 36.
+</h2>
+
+
+
+<div class="poem"><div class="stanza">
+<span>
+On Lady Day the death occurred
+</span><br />
+<span class="i01">
+  Of Hubert Henry Huckett,
+</span><br />
+<span>
+Who fell beneath a brewers' dray
+</span><br />
+<span class="i01">
+  And promptly kicked the bucket.
+</span><br />
+
+</div><div class="stanza">
+<span>
+He left a very charming Wife,
+</span><br />
+<span class="i01">
+  And one enchanting Daughter,
+</span><br />
+<span>
+Two Sons, who, if the truth was told,
+</span><br />
+<span class="i01">
+  Drank much more than they ought'er.
+</span><br />
+
+</div><div class="stanza">
+<span>
+His Will was proved and it was found
+</span><br />
+<span class="i01">
+  He'd left as weird collection
+</span><br />
+<span>
+Of Stocks and Shares as e'er was known
+</span><br />
+<span class="i01">
+  Within man's recollection.
+</span><br />
+
+</div><div class="stanza">
+<span>
+He'd (&pound;) 60 Bags and 40 Coils
+</span><br />
+<span class="i01">
+  100 Common Can. Pacs.,
+</span><br />
+<span>
+And (&pound;) 40 Berthas, 60 Lions
+</span><br />
+<span class="i01">
+  And 42 Brazil Tracs.
+</span><br />
+
+</div><div class="stanza">
+<span>
+He'd 80 Knackers, 20 Breads
+</span><br />
+<span class="i01">
+  And just (&pound;) 400 Saras,
+</span><br />
+<span>
+(&pound;) 1,000 Middies, 20 Tanks,
+</span><br />
+<span class="i01">
+  And (&pound;) 57 Claras.
+</span><br />
+
+</div><div class="stanza">
+<span>
+200 Chinas (&pound;) 90 Megs,
+</span><br />
+<span class="i01">
+  10 Virgins (&pound;) 40 Doras,
+</span><br />
+<span>
+(&pound;) 1,000 Vestas, Matches 10,
+</span><br />
+<span class="i01">
+  12 Bones and (&pound;) 80 Noras,
+</span><br />
+
+</div><div class="stanza">
+<span>
+The Cash at Bank was &pound;80,
+</span><br />
+<span class="i01">
+  The Cash in House was seven,
+</span><br />
+<span>
+The Furniture was valued at
+</span><br />
+<span class="i01">
+  Four hundred pounds eleven.
+</span><br />
+
+</div><div class="stanza">
+<span>
+Debts due at death were &pound;90,
+</span><br />
+<span class="i01">
+  And no one in their senses
+</span><br />
+<span>
+Can say that &pound;20 was much
+</span><br />
+<span class="i01">
+  For Funeral Expenses.
+</span><br />
+
+</div><div class="stanza">
+<span>
+The Trustee read the Will with care
+</span><br />
+<span class="i01">
+  And studied it minutely,
+</span><br />
+<span>
+And found that all was left unto
+</span><br />
+<span class="i01">
+  The Widow absolutely,
+</span><br />
+
+</div><div class="stanza">
+<span>
+Except some Legacies, which made
+</span><br />
+<span class="i01">
+  The worthy man feel dizzy,
+</span><br />
+<span>
+He read "I hereby leave my Bags
+</span><br />
+<span class="i01">
+  Unto my daughter Lizzie."
+</span><br />
+
+</div><div class="stanza">
+<span>
+"I leave the Virgins to my son,
+</span><br />
+<span class="i01">
+  Advising him to hold them,
+</span><br />
+<span>
+Unless it proves upon my death
+</span><br />
+<span class="i01">
+  I've previously sold them."
+</span><br />
+
+</div><div class="stanza">
+<span>
+"I solemnly bequeath my Bones
+</span><br />
+<span class="i01">
+  Unto my second sonny,
+</span><br />
+<span>
+Although I know they'll quickly be
+</span><br />
+<span class="i01">
+  Converted into money."
+</span><br />
+
+</div><div class="stanza">
+<span>
+"I also feel in duty bound
+</span><br />
+<span class="i01">
+  To leave my brother's kiddies
+</span><br />
+<span>
+A Legacy, so let his girls
+</span><br />
+<span class="i01">
+  Take over all the Middies."
+</span><br />
+
+</div><div class="stanza">
+<span>
+"My Trustee gets a hundred pounds
+</span><br />
+<span class="i01">
+  For trouble and attention,
+</span><br />
+<span>
+All Legacies are duty free,
+</span><br />
+<span class="i01">
+  Perhaps I ought to mention."
+</span><br />
+
+</div><div class="stanza">
+<span>
+"Those whom I leave will thus receive,
+</span><br />
+<span class="i01">
+  A generous provision,
+</span><br />
+<span>
+And when all's paid, they'll see I've made
+</span><br />
+<span class="i01">
+  A very just division."
+</span><br />
+</div></div>
+
+<p>
+<i>The following lines were addressed by the
+Trustee to the Professional Accountant:&mdash;</i>
+</p>
+
+
+<div class="poem"><div class="stanza">
+<span>
+You are a man, to Law and Figures bred,
+</span><br />
+<span>
+I am a Layman, and I fear to tread
+</span><br />
+<span class="i02">
+    The unknown way.
+</span><br />
+<span>
+You know the course Executors should take
+</span><br />
+<span>
+To carry out their Trust, without mistake,
+</span><br />
+<span class="i02">
+    Without delay.
+</span><br />
+
+</div><div class="stanza">
+<span>
+Give me then help to ascertain the rate
+</span><br />
+<span>
+Of Duty payable on the Estate;
+</span><br />
+<span class="i02">
+    The Residue,
+</span><br />
+<span>
+Which goes to Mrs. Huckett, and which may
+</span><br />
+<span>
+Be challenged by her lawyer; and I'll pay
+</span><br />
+<span class="i02">
+    A fee to you.
+</span><br />
+</div></div>
+
+<table class='border'>
+  <tr><td colspan='4' class='c'>PARTICULARS OF INVESTMENTS LEFT BY H. H. HUCKETT, Deceased.</td></tr>
+  <tr>
+    <td style="width:20%;">Short Name of Investment. &nbsp;</td>
+    <td> Full Name of Investment.  &nbsp;</td>
+    <td style="width:20%;">Amount left by Deceased. &nbsp;</td>
+    <td style="width:20%;">Cum. Div Price at Date of Death</td>
+  </tr>
+  <tr>
+    <td>Bags &nbsp;</td>
+    <td>Buenos Ayres Gt. Southern Rly. Ordinary Stock</td>
+    <td>&pound;60 Stock</td>
+    <td>116-117</td>
+  </tr>
+  <tr>
+    <td>Coils &nbsp;</td>
+    <td>Californian Oilfields Ordinary Shares</td>
+    <td>40 Shares &pound;1 each</td>
+    <td>5<span class='numer'>3</span>&frasl;<span class='denom'>4</span>-6<span class='numer'>1</span>&frasl;<span class='denom'>4</span></td>
+  </tr>
+  <tr>
+    <td>Can. Pacs. &nbsp;</td>
+    <td>Canadian Pacific Rly. Common Stock</td>
+    <td>100 Shares $100 each</td>
+    <td>233<span class='numer'>1</span>&frasl;<span class='denom'>2</span>-234<span class='numer'>1</span>&frasl;<span class='denom'>2</span> ($5=&pound;1)</td>
+  </tr>
+  <tr>
+    <td>Berthas &nbsp;</td>
+    <td>London, Brighton &amp;South Coast</td>
+    <td>&pound;40 Stock Rly. Deferred Stock</td>
+    <td>89<span class='numer'>3</span>&frasl;<span class='denom'>4</span>-90<span class='numer'>1</span>&frasl;<span class='denom'>4</span></td>
+  </tr>
+  <tr>
+    <td>Lions &nbsp;</td>
+    <td>J. Lyons &amp;Co., Ltd., Ordinary Shares</td>
+    <td>60 Shares &pound;1 each</td>
+    <td>6<span class='numer'>5</span>&frasl;<span class='denom'>16</span>-6<span class='numer'>9</span>&frasl;<span class='denom'>16</span></td>
+  </tr>
+  <tr>
+    <td>Brazil Tracs.</td>
+    <td>Brazil Traction Light and Power</td>
+    <td>42 Shares $100 each</td>
+    <td>89-90 ($5=&pound;1)</td>
+  </tr>
+  <tr>
+    <td>Knackers</td>
+    <td>Harrison, Barber &amp;Co., Ltd.</td>
+    <td>80 Shares &pound;5 each</td>
+    <td>1<span class='numer'>1</span>&frasl;<span class='denom'>2</span>-2</td>
+  </tr>
+  <tr>
+    <td>Breads</td>
+    <td>Aerated Bread Co., Ltd.</td>
+    <td>20 Shares &pound;1 each</td>
+    <td>4<span class='numer'>1</span>&frasl;<span class='denom'>4</span>-4<span class='numer'>1</span>&frasl;<span class='denom'>2</span></td>
+  </tr>
+  <tr>
+    <td>Saras</td>
+    <td>Great Central Rly. Deferred Stock</td>
+    <td>&pound;400 Stock</td>
+    <td>14<span class='numer'>1</span>&frasl;<span class='denom'>4</span>-14<span class='numer'>1</span>&frasl;<span class='denom'>2</span></td>
+  </tr>
+  <tr>
+    <td>Middies &nbsp;</td>
+    <td>Midland Rly. Deferred Ordinary Stock</td>
+    <td>&pound;1,000 Stock</td>
+    <td>70<span class='numer'>1</span>&frasl;<span class='denom'>2</span>-71</td>
+  </tr>
+  <tr>
+    <td>Tanks</td>
+    <td>Tanganyika Concessions</td>
+    <td>20 Shares &pound;1 each</td>
+    <td>2<span class='numer'>3</span>&frasl;<span class='denom'>8</span>-2<span class='numer'>5</span>&frasl;<span class='denom'>8</span></td>
+  </tr>
+  <tr>
+    <td>Claras &nbsp;</td>
+    <td>Caledonian Rly. Deferred Converted Ordinary Stock</td>
+    <td>&pound;57 Stock</td>
+    <td>18<span class='numer'>1</span>&frasl;<span class='denom'>4</span>-18<span class='numer'>1</span>&frasl;<span class='denom'>2</span></td>
+  </tr>
+  <tr>
+    <td>Chinas &nbsp;</td>
+    <td>Eastern Extension Telegraph Co. Ordinary Shares</td>
+    <td>200 Shares &pound;10 each </td>
+    <td>12<span class='numer'>7</span>&frasl;<span class='denom'>8</span>-13<span class='numer'>3</span>&frasl;<span class='denom'>8</span></td>
+  </tr>
+  <tr>
+    <td>Megs &nbsp;</td>
+    <td>Mexican Rly. 1st Preference Stock</td>
+    <td>&pound;90 Stock </td>
+    <td>136-137</td>
+  </tr>
+  <tr>
+    <td>Virgins</td>
+    <td>Virginia New Funded Bonds</td>
+    <td>10 Bonds $100 each</td>
+    <td>84-86 ($5=&pound;1)</td>
+  </tr>
+  <tr>
+    <td>Doras &nbsp;</td>
+    <td>South Eastern Rly. Deferred Stock</td>
+    <td>&pound;40 Stock </td>
+    <td>58<span class='numer'>3</span>&frasl;<span class='denom'>4</span>-59</td>
+  </tr>
+  <tr>
+    <td>Vestas &nbsp;</td>
+    <td>Railway Investment Co. Deferred Stock</td>
+    <td>&pound;100 Stock </td>
+    <td>14<span class='numer'>1</span>&frasl;<span class='denom'>2</span>-15<span class='numer'>1</span>&frasl;<span class='denom'>2</span></td>
+  </tr>
+  <tr>
+    <td>Matches &nbsp;</td>
+    <td>Bryant &amp;May, Ltd., Ordinary Shares</td>
+    <td>10 Shares &pound;1 each </td>
+    <td><span class='numer'>7</span>&frasl;<span class='denom'>8</span>-1<span class='numer'>1</span>&frasl;<span class='denom'>8</span></td>
+  </tr>
+  <tr>
+    <td>Bones &nbsp;</td>
+    <td>Wickens, Pease &amp;Co. Ordinary Shares</td>
+    <td>12 Shares &pound;5 each</td>
+    <td><span class='numer'>3</span>&frasl;<span class='denom'>4</span>-1<span class='numer'>1</span>&frasl;<span class='denom'>4</span></td>
+  </tr>
+  <tr>
+    <td>Noras &nbsp;</td>
+    <td>Great Northern Rly. Deferred Stock</td>
+    <td>&pound;80 Stock</td>
+    <td>50<span class='numer'>1</span>&frasl;<span class='denom'>2</span>-51<span class='numer'>1</span>&frasl;<span class='denom'>2</span></td>
+  </tr>
+</table>
+
+
+<hr class='major' />
+
+<div class='center'>
+<img src='images/header-vine.png' title='decorative header' alt='decorative header' />
+</div>
+
+
+<h2>
+PROBLEM No. 37.
+</h2>
+
+
+<p>
+The late Mr. John Bunyon died
+in affluent circumstances after
+having, by the exercise of keen
+business instincts, overcome those obstacles
+which confront every great
+philanthropist who combines the cause
+of humanity with the desire to achieve
+wealth and fame.
+</p>
+
+<p>
+In his early days he vended to a
+suffering but suspicious public, a commodity
+known as "Bunyon's Specific";
+and it was his custom at this time to
+commence his nightly oration to his
+potential patients at the street corner
+with the words, "Ladies and Gentlemen,
+I have extracted corns from all the
+Crowned Heads of Europe."
+</p>
+
+<p>
+In later years, when by the aid of
+judicious advertising he had convinced
+the public that no home was complete
+without his famous Specific, Mr. Bunyon
+sold his business to a Limited Company,
+and on then calculating his wealth,
+found himself rich beyond the dreams
+of avarice.
+</p>
+
+<p>
+He thereupon decided to enter Society,
+and after some difficulty procured an
+introduction to Mr. James Rooker, who
+obtained for him&mdash;for a consideration&mdash;the
+entr&eacute;e into that sphere of Social life
+which he was so eminently fitted to
+adorn. On Mr. Rooker's advice, he
+purchased a Freehold House in a
+favourable quarter of the West End
+of London, but owing to a desire not to
+disturb certain Investments, he raised
+&pound;2,500 of the purchase price by Mortgage,
+which at the time of his decease
+had not been repaid.
+</p>
+
+<p>
+In view of the great services rendered
+to him by Mr. James Rooker, Mr.
+Bunyon promised to remember him and
+his family in his Will; which led Mr.
+Rooker to be very solicitous concerning
+Mr. Bunyon's health until he was certain
+that a Will had been executed, and
+subsequently caused him much speculation
+as to whether an early decease of
+his Patron might not be more beneficial
+than the advantages to be gained from
+him whilst alive.
+</p>
+
+<p>
+Mr. Bunyon's death put an end to
+these speculations, and it occurred under
+the following circumstances. Having met
+Mr. Rooker by appointment at that
+gentleman's house, they spent a merry
+hour at the card table, much to Mr.
+Rooker's advantage. They then sallied
+forth in a Taxi-cab; when suddenly
+remembering that he had parted with
+all his ready cash, and knowing that
+Mr. Rooker never paid for cabs on
+principle, Mr. Bunyon ordered the
+chauffeur to drive to Attenborough's and
+there placed his diamond pin in pledge
+for the sum of &pound;5. Feeling somewhat
+faint after this exertion, he instructed
+the chauffeur to drive to a Chemist's
+where he ordered a pick-me-up. The
+Chemist not knowing his customer,
+considered his symptoms a fit case for
+a dose of "Bunyon's Specific," of which
+Mr. Bunyon unwittingly partook, and so
+met his death.
+</p>
+
+<p>
+Mr. Bunyon's Will was found to
+contain the following Legacies and
+Devises in favour of the Rooker Family:&mdash;
+</p>
+
+
+<div class="blockquote" style='text-indent:-1.5em;'>
+<p>
+Mr. James Rooker, my Diamond Pin.
+</p>
+
+<p>
+Mr. Tracey Rook Rooker, 1,000
+Shares in "Bunyon, Ltd."
+</p>
+
+<p>
+Mr. Ricardo Rook Rooker,  my
+Freehold House in London.
+</p>
+
+<p>
+Miss Christabel Rook Rooker, &pound;100
+of Consols out of my &pound;2,000
+Consols.
+</p>
+
+<p>
+Miss Emmeline Rook Rooker, &pound;100
+payable out of my &pound;2,000 Consols.
+</p>
+</div>
+
+<p>
+It was found that both the Shares in
+"Bunyon, Ltd." and the Consols, had
+been sold shortly before Mr. Bunyon's
+death.  The Freehold House was valued
+at &pound;6,500, the Diamond Pin at &pound;25.
+</p>
+
+<hr /> <!--
+<tb>
+ -->
+
+<p>
+The Net value of his Estate when
+aggregated was &pound;108,000.  What did the
+Rooker Family receive, and what duties
+were payable by them?
+</p>
+
+<div class='center'>
+<img src='images/footer-pot.png'
+    title='decoration' alt='decoration' />
+</div>
+
+<hr class='major' />
+
+<div id='FOREWORD_TRANSLATION' style='background-color:#DDD;padding-top:1em;'>
+
+<p style='margin-top:1em;margin-right:2em;margin-left:2em; border:1px solid black;'>
+<b>Transcriber's Note</b>: In the following, the original text of the
+<a href='#FOREWORD'>Foreword</a>
+is repeated with an informal English translation by proofer "Lucy 24"
+(Louise Hope). This was not in the original text, but is provided by the
+transcribers for the convenience of the reader. The English text is placed
+in the public domain.
+</p>
+
+<h2>
+Foreword.
+</h2>
+
+<p>
+By D. F. de l'Hoste Ranking, M.A., LL.D.
+</p>
+
+
+<div class="poem"><div class="stanza">
+<span>
+De mortuo illo quid dicam?
+</span><br />
+<span class="i02">
+     <i>What shall I say about the deceased?</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+"Nilnisi bonum" ut aiunt.
+</span><br />
+<span class="i02">
+     <i>"Nothing but good" as they say.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+Sed quid si nil boni fecit?
+</span><br />
+<span class="i02">
+     <i>But what if he didn't do any(thing) good?</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+De bonis licet loqui.
+</span><br />
+<span class="i02">
+     <i>One can talk about his goods.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+At si nulla bona reliquit?
+</span><br />
+<span class="i02">
+     <i>But what if he left no goods?</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+De eo tacere decet:
+</span><br />
+<span class="i02">
+     <i>One should keep quiet about that:</i>
+</span><br />
+<span>
+si neque bonum fecit nec bona acquisivit nil valet.
+</span><br />
+<span class="i02">
+     <i>if he neither did good nor acquired goods, he is worthless.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+Sed si bona reliquit in sermonem hominum semper venit;
+</span><br />
+<span class="i02">
+     <i>But if he left property, people always talk about him;</i>
+</span><br />
+<span>
+vitia operta sunt;
+</span><br />
+<span class="i02">
+     <i>his faults are concealed;</i>
+</span><br />
+<span>
+pecuniam fecit, illa quidem "non olet."
+</span><br />
+<span class="i02">
+     <i>he made money, and it "doesn't smell".</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+Quem heredem instituit?
+</span><br />
+<span class="i02">
+     <i>Whom did he name as heir?</i>
+</span><br />
+<span>
+Extraneis haec omnia livori proxima videntur.
+</span><br />
+<span class="i02">
+     <i>To outsiders all these seem next door to envy.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+Te autem si tu aut cognatione aut affinitate propinquus exspectatio tenet.
+</span><br />
+<span class="i02">
+     <i>But you&mdash;if you are close, either by acquaintance or relationship, expectation grips you.</i>
+</span><br />
+<span>
+An mea interest? Si sic habet, quanti?
+</span><br />
+<span class="i02">
+     <i>But does it concern me? If that's how it is, how much?</i>
+</span><br />
+<span>
+Suave est ex magno tollere acervo;
+</span><br />
+<span class="i02">
+     <i>It's pleasant to receive a big heap;</i>
+</span><br />
+<span>
+ejus pecunia quid non facere possim?
+</span><br />
+<span class="i02">
+     <i>with his money, what couldn't I do?</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+Siste, amice; aliquantulum cogita;
+</span><br />
+<span class="i02">
+     <i>Stop, friend; think a little;</i>
+</span><br />
+<span>
+supersunt multi cognati;
+</span><br />
+<span class="i02">
+     <i>there remain many friends;</i>
+</span><br />
+<span>
+fieri potest ut aut cum aliis bona partire debeas, aut exheredatus sis.
+</span><br />
+<span class="i01">
+  <i>it may be that either you have to share the goods with others, or you are disinherited.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+Gerrae! Sine dubio testamentum fecit:
+</span><br />
+<span class="i02">
+     <i>Nonsense! Without a doubt he made a will:</i>
+</span><br />
+<span>
+et cum ratione constat me alicujus rei legatarium esse.
+</span><br />
+<span class="i02">
+     <i>and it's reasonable to think I was left something.</i>
+</span><br />
+<span>
+Nemo enim magis eum fovit;
+</span><br />
+<span class="i02">
+     <i>For nobody took better care of him;</i>
+</span><br />
+<span>
+alii omnes cognati asseclae; solus eum amavi.
+</span><br />
+<span class="i02">
+     <i>all his other friends only cared about his money; I alone loved him.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+Insipiens, inter os et offam multa intervenire possunt.
+</span><br />
+<span class="i02">
+     <i>O fool, many things can come "between the mouth and the morsel"</i>
+</span><br />
+<span class="i02">
+     <i>[Latin idiom, like "many a slip between cup and lip"?]</i>
+</span><br />
+<span>
+Audi de gente Fulvia fabellam:
+</span><br />
+<span class="i02">
+     <i>I've heard the story of the Fulvian people:</i>
+</span><br />
+<span>
+de multis mutato nomine narratur.
+</span><br />
+<span class="i02">
+     <i>it is told of many, with the name changed.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+(In scena est coenatio Georgii Fusci, argentariorum interpretis.
+</span><br />
+<span class="i02">
+     <i>(Setting: The dining room of George Black, assayer of money.</i>
+</span><br />
+<span>
+Fuscus, bene coenatus, alterum cyathum Falerni sorbillat.
+</span><br />
+<span class="i02">
+     <i>Black, having dined well, is enjoying his second glass of port.</i>
+</span><br />
+<span>
+Accurrit uxor, commota;
+</span><br />
+<span class="i02">
+     <i>His wife runs in, excited;</i>
+</span><br />
+<span>
+in manu litteras resignatas tenet).
+</span><br />
+<span class="i02">
+     <i>in her hand she holds a signed paper.)</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+U. Georgi!
+</span><br />
+<span class="i02">
+     <i>George!</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+F. Quid tibi nunc est? Num quid novi est?
+</span><br />
+<span class="i02">
+     <i>What's the matter with you? What's happening?</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+U. Amita mea Maria decessit!
+</span><br />
+<span class="i02">
+    <i>My aunt Mary has died!</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+F. Bene! nunquam postea illud vile Sabinum necesse erit obsorbere:
+</span><br />
+<span class="i02">
+     <i>Good! I will never again have to drink her vile claret:</i>
+</span><br />
+<span class="i01">
+   magnum est solatium.
+</span><br />
+<span class="i02">
+     <i>that's a great solace.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+U. At tu Georgi semper id laudasti!
+</span><br />
+<span class="i02">
+     <i>But George, you always praised it!</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+F. Et tu simul filiaeque semper miratae estis Persicam illam detestabilem
+</span><br />
+<span class="i02">
+     <i>And you and your daughter always admired that detestable Persian</i>
+</span><br />
+<span class="i01">
+   et psittacum dissonum, et laudibus extulistis:
+</span><br />
+<span class="i02">
+     <i>and the raucous parrot, and sang their praises:</i>
+</span><br />
+<span class="i01">
+  pretium fuit vetulae placere.
+</span><br />
+<span class="i02">
+     <i>that's the cost of pleasing old women.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+U. Esto: illa vero suavia erant.
+</span><br />
+<span class="i02">
+     <i>Never mind: They were really agreeable.</i>
+</span><br />
+<span class="i01">
+   At hic mihi litterae a cognitore ejus Semaureo allatae:
+</span><br />
+<span class="i02">
+     <i>But this letter was sent to me by her solicitor [Semaureus]:</i>
+</span><br />
+<span class="i01">
+  dicit se hodie vesperi te conventurum.
+</span><br />
+<span class="i02">
+     <i>he says he is coming to [see] you this evening.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+F. Demiror si testamentum fecit!
+</span><br />
+<span class="i02">
+     <i>I'll be amazed if she made a will!</i>
+</span><br />
+<span class="i01">
+   Sin minus omnia ad te perveniunt,
+</span><br />
+<span class="i02">
+     <i>If not, everything goes to you;</i>
+</span><br />
+<span class="i01">
+   tu heres ex asse;
+</span><br />
+<span class="i02">
+     <i>you are the [default/intestate] heir;</i>
+</span><br />
+<span class="i01">
+   cognati alii desunt.
+</span><br />
+<span class="i02">
+     <i>there are no other relatives</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+U. Est quidem mariti nepos iste.
+</span><br />
+<span class="i02">
+     <i>There's that nephew of her husband.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+F. Nullus: tu sola heres:
+</span><br />
+<span class="i02">
+     <i>That's nothing: you alone are the heir:</i>
+</span><br />
+<span class="i01">
+   si intestata omnia ad te.
+</span><br />
+<span class="i02">
+     <i>if she [died] intestate, everything goes to you.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+U. Tabulas vere fecit:
+</span><br />
+<span class="i02">
+     <i>She really made an accounting:</i>
+</span><br />
+<span class="i01">
+  cognitor scribit se te conventurum quia
+</span><br />
+<span class="i02">
+     <i>her solicitor writes that he is coming to you because</i>
+</span><br />
+<span class="i01">
+  testamentum ad rem tuam maxime pertinet.
+</span><br />
+<span class="i02">
+     <i>her will greatly concerns your business.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+F. Mihi crede igitur!
+</span><br />
+<span class="i02">
+     <i>Then believe me!</i>
+</span><br />
+<span class="i01">
+   Aliquid magni tibi legavit:
+</span><br />
+<span class="i02">
+     <i>She left you something big:</i>
+</span><br />
+<span class="i01">
+  haud verisimile illam quidquam juveni Albo legasse:
+</span><br />
+<span class="i02">
+     <i>it's hardly likely that she left anything to young White:</i>
+</span><br />
+<span class="i01">
+ nunquam illam observavit;
+</span><br />
+<span class="i02">
+     <i>he never paid any attention to her;</i>
+</span><br />
+<span class="i01">
+  homo nil est nisi pictor ignotus aut aliquid simile:
+</span><br />
+<span class="i02">
+     <i>he is nobody except an unknown painter or something like that:</i>
+</span><br />
+<span class="i01">
+  uxorem quoque duxit quamdam inopem,
+</span><br />
+<span class="i02">
+     <i>he also married some penniless woman,</i>
+</span><br />
+<span class="i01">
+   et eis saepe amita tua subvenire debuit.
+</span><br />
+<span class="i02">
+     <i>and your aunt always had to come to their assistance.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+U. Fores pulsantur: advenit cognitor!
+</span><br />
+<span class="i02">
+     <i>There's a knock at the door: her solicitor has arrived!</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+F. Dic famulae ut alteram cyathum ponat.
+</span><br />
+<span class="i02">
+     <i>Tell the maid to bring another glass.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+(Ingreditur Dominus Semaureus.)
+</span><br />
+<span class="i02">
+     <i>(Enter Mr [Semaureus].)</i>
+</span><br />
+
+</div><div class="stanza">
+<span class="i01">
+   Quid agis vir doctissime?
+</span><br />
+<span class="i02">
+     <i>How are you, my esteemed friend?</i>
+</span><br />
+<span class="i01">
+   Mea uxor dixit te venturum;
+</span><br />
+<span class="i02">
+     <i>My wife said you were coming;</i>
+</span><br />
+<span class="i01">
+   nonne ob testamentum amitae ejus?
+</span><br />
+<span class="i02">
+    <i>is it about the will of her aunt?</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+S. Sic res habet, Fusce;
+</span><br />
+<span class="i02">
+     <i>That's how it is, Black;</i>
+</span><br />
+<span class="i01">
+   venio ad te quod hoc res tua maxime refert;
+</span><br />
+<span class="i02">
+     <i>I come to you because this concerns you greatly;</i>
+</span><br />
+<span class="i01">
+  et scio te onus suscepturum.
+</span><br />
+<span class="i02">
+     <i>and I know you will take up the burden.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+F. An sic habet?
+</span><br />
+<span class="i02">
+     <i>Is that how it is?</i>
+</span><br />
+<span class="i01">
+Vetulae illi multa bona provenere ut opinor.
+</span><br />
+<span class="i02">
+     <i>The old lady left a large property, I think.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+S. Permulta: super haec te consulendum putavi.
+</span><br />
+<span class="i02">
+     <i>Very large: I thought to consult you about it.</i>
+</span><br />
+<span class="i01">
+   Hic mecum tabulas attuli ut eas inspicias.
+</span><br />
+<span class="i02">
+     <i>I have brought the accounting with me so you can study it.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+F. Bene est; Dignissima erat; cui semper plurimum tribui.
+</span><br />
+<span class="i02">
+     <i>Good; she was a worthy lady; I always said so.</i>
+</span><br />
+<span class="i01">
+   Falerni sume cyathum.
+</span><br />
+<span class="i02">
+     <i>Have a glass of port.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+S. Benigne dicis; dimidium:
+</span><br />
+<span class="i02">
+     <i>You are very kind; half a glass;</i>
+</span><br />
+<span class="i01">
+   bona venia uxoris tuae est mihi in animo
+</span><br />
+<span class="i02">
+     <i>with the permission of your wife I am thinking of telling you</i>
+</span><br />
+<span class="i01">
+   summas testamenti reddere;
+</span><br />
+<span class="i02">
+     <i>the amounts in the will;</i>
+</span><br />
+<span class="i01">
+  ad illam guoque pertinet.
+</span><br />
+<span class="i02">
+     <i>it concerns her too.</i>
+</span><br />
+<span class="i01">
+   (Testamenta allata resignat.)
+</span><br />
+<span class="i02">
+     <i>(Opens the will he has brought.)</i>
+</span><br />
+
+</div><div class="stanza">
+<span class="i01">
+  Post nonnulla famulis legata ita instituit:
+</span><br />
+<span class="i02">
+     <i>After several bequests to servants, it states:</i>
+</span><br />
+
+</div><div class="stanza">
+<span class="i01">
+   "Fratris filiae Mariae lego Persicam et Psittacum
+</span><br />
+<span class="i02">
+     <i>To my brother's daughter Mary I leave the Persian and the Parrot,</i>
+</span><br />
+<span class="i01">
+ quae animalia tantopere admirata est,
+</span><br />
+<span class="i02">
+     <i>which animals she greatly admired,</i>
+</span><br />
+<span class="i01">
+   certa fiducia se illis hospitium praebituram;
+</span><br />
+<span class="i02">
+     <i>in the full confidence that she will provide a good home for them;</i>
+</span><br />
+<span class="i01">
+   eidem etiam lego annulum meum gemmatum.
+</span><br />
+<span class="i02">
+     <i>to her I also leave my diamond ring.</i>
+</span><br />
+<span class="i01">
+   Nepoti ejusdem Mariae viro Georgio Fusco lego omne
+</span><br />
+<span class="i02">
+     <i>To my niece Mary's husband George Black I leave</i>
+</span><br />
+<span class="i01">
+   quod in hypogaeo superest vinum illud Falernum
+</span><br />
+<span class="i02">
+     <i>all the wine that remains in my cellar because</i>
+</span><br />
+<span class="i01">
+  quod semper laudabat."
+</span><br />
+<span class="i02">
+     <i>he always praised it.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+F. (In malam rem.)
+</span><br />
+<span class="i02">
+     <i>(Black is unhappy.)</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+S. "Quod ad ceteras possessiones
+</span><br />
+<span class="i02">
+     <i>As to my remaining possessions,</i>
+</span><br />
+<span class="i01">
+  Georgius Fuscus heres esto ex asse:
+</span><br />
+<span class="i02">
+     <i>let George Black inherit all:</i>
+</span><br />
+<span class="i01">
+   (subridet Fuscus et uxori in aurem susurrat "ita ut dixi.")
+</span><br />
+<span class="i02">
+     <i>(Black smiles and whispers in his wife's ear "as I said.")</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+S. (Conversa tabula)
+</span><br />
+<span class="i02">
+     <i>(Turning the page)</i>
+</span><br />
+<span class="i01">
+   "et rogo eum ut cum primum potuerit haereditatem adire,
+</span><br />
+<span class="i02">
+     <i>"and I ask him to go to the inheritance as soon as possible,</i>
+</span><br />
+<span class="i01">
+   omnibus et fundis et mobilibus venditis,
+</span><br />
+<span class="i02">
+     <i>to sell both real property and chattel,</i>
+</span><br />
+<span class="i01">
+   pecunias in cautionibus publica auctoritate factis
+</span><br />
+<span class="i02">
+     <i>to deposit the money in a bank</i>
+</span><br />
+<span class="i01">
+   collocet et fructus reddat nepoti mariti mei
+</span><br />
+<span class="i02">
+     <i>and give the interest to my husband's nephew</i>
+</span><br />
+<span class="i01">
+   Jacobo Albo et uxori suae in aetatem
+</span><br />
+<span class="i02">
+     <i>John White and his wife for their lifetimes</i>
+</span><br />
+<span class="i01">
+   aut utri eorum vita superarit:
+</span><br />
+<span class="i02">
+     <i>or to whichever of them outlives the other:</i>
+</span><br />
+<span class="i01">
+   eis mortuis ut inter liberos eorum caput dividat:
+</span><br />
+<span class="i02">
+     <i>when they die, the capital is to be divided among their children:</i>
+</span><br />
+<span class="i01">
+   aut liberis sine prole defunctis
+</span><br />
+<span class="i02">
+     <i>or if their children die without offspring</i>
+</span><br />
+<span class="i01">
+   caput reddat ad sodalitatem Anthropophagis Africanis
+</span><br />
+<span class="i02">
+     <i>the capital goes to the African Cannibal Mission</i>
+</span><br />
+<span class="i01">
+   informandis et nutriendis institutam:
+</span><br />
+<span class="i02">
+     <i>established to educate and provide for them:</i>
+</span><br />
+<span class="i01">
+   praemio sint fiduciario viginti in annum librae."
+</span><br />
+<span class="i02">
+     <i>let the executor's pay be twenty pounds a year."</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+F. Anus odiosa et malefica!
+</span><br />
+<span class="i02">
+     <i>Hateful and malicious old woman!</i>
+</span><br />
+<span class="i01">
+   At enitar ut testamentum rescindatur;
+</span><br />
+<span class="i02">
+     <i>I will try to overturn the will;</i>
+</span><br />
+<span class="i01">
+   inofficiosi testamenti querelam instituam!
+</span><br />
+<span class="i02">
+     <i>I will make a complaint about this useless will!</i>
+</span><br />
+<span class="i01">
+   Delira fuit!
+</span><br />
+<span class="i02">
+     <i>She was mad!</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+S. Immo mentis omnino compos fuit, Improbe:
+</span><br />
+<span class="i02">
+     <i>On the contrary she was of completely sound mind, unworthy man:</i>
+</span><br />
+<span class="i01">
+   sic summa fide clamabo et testabor.
+</span><br />
+<span class="i02">
+     <i>I will affirm and witness to this.</i>
+</span><br />
+<span class="i01">
+   Verba tua pro tempore et re indecora.
+</span><br />
+<span class="i02">
+     <i>Your words are spontaneous and unfitting.</i>
+</span><br />
+<span class="i01">
+   Tui piget me: evado.
+</span><br />
+<span class="i02">
+     <i>I am ashamed of you: I shun you.</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+F. Maria!
+</span><br />
+<span class="i01">
+   <i>Mary!</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+U. Georgi!
+</span><br />
+<span class="i01">
+   <i>George!</i>
+</span><br />
+
+</div><div class="stanza">
+<span>
+Uterque. Exsecrabilis Illa!
+</span><br />
+<span class="i02">
+    <i>Both. Detestable woman!</i>
+</span><br />
+
+</div><div class="stanza">
+<span class="i01">
+  (Aulaeum tollitur.)
+</span><br />
+<span class="i02">
+    <i>(Curtain.)</i>
+</span><br />
+</div></div>
+</div>
+<div class='center'>
+<img src='images/appointment.png' style='width:128px'
+    title='BY APPOINTMENT TO H.M. THE KIN...' alt='BY APPOINTMENT TO H.M. THE KIN...'
+  />
+<p class='caption'><span class='smcap'>by appointment to</span> H.M. THE KING
+J. MILES &amp;C<sup>o</sup> L<sup>TD</sup>
+<span class='smcap'>Printers</span>
+68 &amp;70.
+<span class='smcap'>Wardour</span> S<sup>T</sup>,
+<span class='smcap'>London</span>,
+W.
+</p>
+</div>
+<div class='center'>
+<a href='images/hrcover.png'>
+  <img src='images/cover.png'
+    title='Portion of the book cover...' alt='Portion of the book cover...'
+  />
+</a>
+<p class='caption'>Portion of the book cover</p>
+</div>
+
+</body>
+</html>
